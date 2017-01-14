@@ -1,28 +1,60 @@
 About me
 ########
-:date: 2013-07-21
+:date: 2017-01-13
 :author: Geert
 :slug: about
 
-Hi there! My name is Geert, which is a Dutch name without obvious pronounciation.
+Hi there! My name is **Geert**, which is a funny Dutch name.
 
-I am a `post-doctoral astronomer`_ at the University of Hertfordshire in the UK, where I work on the data processing and analysis of two projects
-which aim to map our own Galaxy in unprecedented detail: `IPHAS`_ and `VPHAS`_.
-I became an astronomer because I love analysing and visualising data using powerful tools like Python and PostgreSQL. I believe that computers are the bicycle of the brain, and I am trying to cycle as far and as fast as I can.
+I am an **Astronomer** and **Computer Scientist**
+at the NASA Ames Research Center in sunny **Silicon Valley**, California.
 
-In my spare time, I act as a council member for the `International
-Meteor Organization`_, for whiche I analyse data collected
-by amateur astronomers. I have also
-previously created a central archive of ground-based `amateur
-observations of Venus`_ for the European Space Agency, and I enjoy
-hunting for minor planets using remote telescopes.
+I help run NASA's **Kepler/K2 Space Telescope**,
+which is discovering **Earth-like planets orbiting other stars**
+and has yielded a data archive that is revolutionizing astrophysics.
+
+I became an astronomer because I love to analyze data using powerful tools such as **Python**, **PostgreSQL**, and **high-performance computing**.
+I believe that computers are a bicycle for the brain and I like to cycle them as far and as fast as I can. 🚴
+
+I obtained my undergraduate degree in computer science
+at the University of Antwerp in Belgium,
+where I focused on **statistics**, **probability theory**, **databases**, and **machine learning**.
+
+After my undergraduate studies,
+I tackled data analysis challenges
+during internships at 
+the **Meteorological Institute of Belgium** and
+the **European Space Agency**.
+
+I then went on to obtain a **PhD in Astrophysics** at the Armagh Observatory (Queen's University Belfast),
+and completed **post-doctoral research** at the University of Hertfordshire, where I used large telescopes to map our Milky Way and gained **teaching experience** by lecturing undergraduate courses in software engineering and statistics.
+
+Finally, I was given the incredible opportunity to join **NASA**.
+
+
+Career
+~~~~~~
+- 2002-2006: MSc Computer Science, **University of Antwerp** (Belgium)
+- 2006-2007: Research Assistant, **Royal Meteorological Institute** (Belgium)
+- 2007-2008: Young Graduate Trainee, **European Space Agency** (The Netherlands)
+- 2008-2012: PhD Astrophysics, **Queen's University Belfast** (UK)
+- 2012-2015: Post-doctoral Research Assistant, **University of Hertfordshire** (UK)
+- 2015-now: Research Scientist, **NASA** (USA)
 
 Research interests
 ~~~~~~~~~~~~~~~~~~
--  **Astronomical surveys**: `IPHAS`_, `VPHAS`_, LSST, ...
--  **Our solar system**: meteor showers, comets, minor
-   planets.
--  **Computing**: probabilistic models, machine learning, data visualisation.
+-  Astrophysics: star formation, exoplanets, solar system.
+-  Astronomical surveys: Kepler, K2, `IPHAS`_, `VPHAS`_, LSST.
+-  Computing: probabilistic models, MCMC, data visualisation.
+
+Specialties
+~~~~~~~~~~~
+- object-oriented software engineering using Python, Java, C/C++, PHP;
+- web development using Javascript, JQuery, Bootstrap, etc;
+- data cleaning, processing and archiving using unix tools and database systems;
+- hierarchical probabilistic (Bayesian) inference and machine learning;
+- data visualization;
+- presenting scientific results to an audience of experts or non-experts.
 
 Things I have created
 ~~~~~~~~~~~~~~~~~~~~~
@@ -39,14 +71,6 @@ Other highlights
 -  My interviews with `BBC News`_, `Nature`_, `Sky At Night`_.
 -  Asteroid 22275 is `named after me`_.
 -  All-hailed on `episode 121`_ of the Recycled Electrons podcast.
-
-
-Follow me on Twitter!
-~~~~~~~~~~~~~~~~~~~~~
-.. raw:: html
-
-    <a class="twitter-timeline"  href="https://twitter.com/GeertHub" data-widget-id="516967451938918401">Tweets by @GeertHub</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
 
