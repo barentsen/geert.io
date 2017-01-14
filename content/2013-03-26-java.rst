@@ -1,0 +1,63 @@
+Is Java freezing your system? Tune the garbage collector!
+#########################################################
+:date: 2013-03-26
+:author: Geert
+:category: computing
+:tags: Aladin, Java, Topcat
+:slug: java-freezing-due-to-garbage-collector
+
+I regularly open huge images and tables (>1 GB) in interactive Java-based
+(astronomy) software such as `Aladin`_ and `TopCat`_. Because of `the
+way memory allocation works in Java`_, the area where objects reside in
+memory (called the heap) needs to be reserved up front using Java's
+:code:`-Xmx` switch. Hence I tend to run memory-intensive applications
+using:
+
+.. code-block:: bash
+
+   java -Xmx4000m
+
+If you don't use this flag you will get an :code:`OutOfMemoryError`
+exception as soon as your application exceeds the default heap size,
+which is typically set at only a few hundred megabytes.
+
+However, I frequently found myself faced with a horrible performance
+experience when using a large heap. Java applications would freeze my
+entire (64-bit) Linux system for anywhere between 2 and 60 seconds. This
+happened regardless of the JVM used (I tried Oracle Java 1.7, Sun Java
+1.6, GCJ 1.5). I verified that my system had plenty of memory available
+and was not swapping, hence a lack of memory was not to blame. A
+profiler revealed that these freezes were instead caused by an insane
+number of interrupts which ate 100% of all CPU cores in so-called
+"system" cycles.
+
+The cause of these system freezes is Java's garbage collection
+mechanism; a built-in automated memory management system which reclaims
+memory occupied by objects that are no longer in use. Whilst this
+feature makes programming in Java a bit easier than, say, C++; it comes
+with the disadvantage that garbage collection in a large heap can
+`introduce a considerable overhead`_. Some collection algorithms deal
+less effectively with large heaps than others, and unfortunately in my
+case, Java appeared to be using a collection strategy which paused the
+application during the whole duration of each garbage collection run,
+hence resulting in frequent freezing.
+
+The trick to avoid these freezes is to tell Java to use a collection
+strategy which runs concurrently to the application, hence avoiding
+lengthy interruptions of the entire process. This can be achieved using
+the :code:`-XX:+UseConcMarkSweepGC` flag, i.e.:
+
+.. code-block:: bash
+
+   java -Xmx4000m -XX:+UseConcMarkSweepGC
+
+There are in fact `many more`_ tuning parameters which can influence the
+behaviour of the garbage collection, but :code:`UseConcMarkSweepGC` looks like
+the first obvious thing to try if you are experiencing annoying freezes
+in memory-intensive Java applications.
+
+.. _Aladin: http://aladin.u-strasbg.fr/
+.. _TopCat: http://www.star.bris.ac.uk/~mbt/topcat/
+.. _the way memory allocation works in Java: http://www.ibm.com/developerworks/java/library/j-nativememory-linux/
+.. _introduce a considerable overhead: http://stackoverflow.com/questions/214362/java-very-large-heap-sizes
+.. _many more: http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#cms

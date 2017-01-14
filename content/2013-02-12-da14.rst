@@ -1,0 +1,35 @@
+From where can you spot 2012 DA14?
+##################################
+:date: 2013-02-12 21:30
+:author: Geert
+:category: asteroids
+:slug: 2012-da14
+
+On Friday 15 February, a 50-meter asteroid named `2012 DA14`_ will
+approach Earth to within a distance of `just ~28 000 km`_. The internet
+`is buzzing`_ about this near-miss because the object is expected to
+become brighter than 9th magnitude for approximately 3 hours
+(18h00-21h30 UTC), peaking at a brightness of 7th magnitude near 19h45
+UTC. Although this is just below the brightness limit of the unaided
+eye, it is within reach of good binoculars.
+
+While there are `plenty`_ of `maps`_ online showing *where in the sky*
+you may find 2012 DA14, I could not find any maps showing *where on
+Earth* you have to be to get a good view. So I made a few maps myself.
+Green areas in the animated gif below indicate parts of the world where
+the asteroid will be above (and the Sun below) the horizon as it sweeps
+past. The maps were generated using a Python class which I pushed to my
+GitHub `repository`_.
+
+.. figure:: |filename|/images/2012da141.gif
+   :alt: Visibility of 2012 DA14.
+   :target: |filename|/images/2012da141.gif
+
+   Visibility of 2012 DA14. Green areas indicate parts of the world where the asteroid will be above (and the Sun below) the horizon as it sweeps past.
+
+.. _2012 DA14: http://neo.jpl.nasa.gov/news/news174.html
+.. _just ~28 000 km: http://remanzacco.blogspot.it/2013/02/close-approach-of-asteroid-2012-da14.html
+.. _is buzzing: https://twitter.com/search?q=%232012DA14
+.. _plenty: http://www.popastro.com/news/newsdetail.php?id_nw=165
+.. _maps: http://www.heavens-above.com/2012da14.aspx
+.. _repository: https://github.com/barentsen/visibility-maps

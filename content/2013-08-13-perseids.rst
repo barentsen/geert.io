@@ -1,0 +1,26 @@
+Perseids 2013 global observing results
+#######################################
+:date: 2013-08-13 12:00
+:author: Geert
+:category: meteors
+:slug: perseids2013
+
+The annual Perseids meteor shower peaked last night between 16h00m and 18h00m UT (12th August 2013). The peak ZHR was about 147 ± 17 meteors/hour.
+
+The graphs below show the visual activity graphs, which I have been generating for the `International Meteor Organization`_ during `each major meteor shower since 2006`_. The graphs are based on the naked-eye observing reports received from hundreds of citizen scientists around the world. 
+
+
+.. figure:: http://www.imo.net/live/perseids2013/out/per2013overview.png
+   :alt: Perseids 2013 visual data
+   :target: http://www.imo.net/live/perseids2013
+
+   ZHR activity graph for the 2013 Perseids based on visual data.
+
+.. figure:: http://www.imo.net/live/perseids2013/out/per2013peak.png
+   :alt: Science cat is ready for GAIA
+   :target: http://www.imo.net/live/perseids2013/#peak
+
+   Detailed activity graph of the period around 12 August 2013.
+
+.. _International Meteor Organization: http://www.imo.net
+.. _each major meteor shower since 2006: http://www.imo.net/zhr

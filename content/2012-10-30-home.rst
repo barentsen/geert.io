@@ -1,0 +1,46 @@
+How do you organise $HOME?
+##########################
+:date: 2012-10-30 22:15
+:author: Geert
+:category: computing
+:slug: how-to-organise-your-home-directory
+
+Home directories often turn into spooky graveyards of random files,
+temporary directories and `images of lolcats`_. It takes courage to
+delete the mess, because there may be one or two important files hiding
+amongst the pr0n. As a result, many scientists have grown afraid to run
+:code:`ls ~` in public, fearing that the output of said command will expose
+them as file-hoarding maniacs. (By the way, the fear of running :code:`ls ~`
+should be called *domusindexophobia* in Latin.)
+
+For years I have employed the popular strategy of sticking random files
+on the desktop, and whenever it becomes a mess, create a folder called
+"oldstuff" and move everything into it. The strength of this strategy is
+that it can be repeated indefinitely (oldstuff2, oldstuff3,
+oldstuff4...), the weakness is that you remain a file-hoarding,
+domusindexophobic maniac.
+
+In the past few months I decided to adopted a more sensible strategy.
+From henceforth, my home directory shall never contain more than 7
+(non-hidden) directories:
+
+-  **~/tmp**: all downloads and unimportant files go here; may be
+   emptied without notice;
+-  **~/bin**: locally installed software, i.e. :code:`./configure
+   --prefix=~/bin/foo`;
+-  **~/dev**: source code trees for programming projects
+   (sub-directories are GitHub repositories);
+-  **~/proj**: various non-programming projects;
+-  **~/doc**: subdirectories for receipts, boarding passes, papers,
+   books, etc.;
+-  **~/lts**: things to archive forever ("Long Term Storage"); e.g.
+   photos and science data (with README files);
+-  **~/msc**: a last resort for things which don't fit elsewhere.
+
+I employ different backup strategies for each folder. For example, parts
+of ~/lts sit on an external network drive, while much of ~/doc sits on
+DropBox and most of ~/dev sits on GitHub.
+
+Is this a Sensible Approach™? What does your nest look like?
+
+.. _images of lolcats: http://4.bp.blogspot.com/-K3vWjzXLsKM/TzDGLdv6GqI/AAAAAAAAB_M/EJUwGAP3sME/s1600/funny-pictures-cat-threatens-to-edit-your-face.jpg

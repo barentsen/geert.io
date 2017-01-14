@@ -1,0 +1,37 @@
+Welcome!
+########
+:date: 2012-10-06 12:00
+:author: Geert
+:category: misc
+:slug: welcome
+
+To celebrate the completion of my PhD and start of a post-doc, I've
+decided to start publishing bits and pieces of research on a blog. I'm
+hoping this will encourage me to write about results more frequently,
+hence achieving more scientific output and interaction than I would
+obtain through peer-reviewed publications and conferences alone.
+
+I am inspired by a number of existing research bloggers who I enjoy
+reading. They include `Andrew Gelman`_, `David Hogg`_, `Sarah Kendrew`_,
+`Andy Lawrence`_, `Adrian Price-Whelan`_, `Robert Simpson`_,
+`AstroBetter`_, `Remanzacco`_, `Zooniverse Blogs`_, `Stuart Lowe`_, as
+well as a a bunch of *micro-bloggers* on Twitter, and others who I
+forget to list.
+
+This blog has just two rules:
+
+#. I shall not apologise for the frequency of posts, or lack thereof.
+#. I shall not apologise for breaking the first rule.
+
+If you agree to these conditions, then please do subscribe to the feed.
+
+.. _Andrew Gelman: http://andrewgelman.com/
+.. _David Hogg: http://hoggresearch.blogspot.co.uk/
+.. _Sarah Kendrew: http://sarahaskew.net/
+.. _Andy Lawrence: http://andyxl.wordpress.com
+.. _Adrian Price-Whelan: http://apwhelan.blogspot.co.uk/
+.. _Robert Simpson: http://orbitingfrog.com/
+.. _AstroBetter: http://www.astrobetter.com
+.. _Remanzacco: http://remanzacco.blogspot.co.uk/
+.. _Zooniverse Blogs: http://blogs.zooniverse.org
+.. _Stuart Lowe: http://www.strudel.org.uk/blog/astro/index.shtml
