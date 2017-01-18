@@ -11,7 +11,8 @@ at the NASA Ames Research Center in sunny **Silicon Valley**, California.
 
 I help run NASA's **Kepler/K2 Space Telescope**,
 which is discovering **Earth-like planets orbiting other stars**
-and has yielded a data archive that is revolutionizing astrophysics.
+and has yielded a huge, revolutionary data set
+that is aiding all areas of astrophysics.
 
 I became an astronomer because I love to analyze data using powerful tools such as **Python**, **PostgreSQL**, and **high-performance computing**.
 I believe that computers are a bicycle for the brain and I like to cycle them as far and as fast as I can. 🚴
@@ -26,10 +27,11 @@ during internships at
 the **Meteorological Institute of Belgium** and
 the **European Space Agency**.
 
-I then went on to obtain a **PhD in Astrophysics** at the Armagh Observatory (Queen's University Belfast),
-and completed **post-doctoral research** at the University of Hertfordshire, where I used large telescopes to map our Milky Way and gained **teaching experience** by lecturing undergraduate courses in software engineering and statistics.
+I then went on to obtain a **PhD in Astrophysics** on the top of star formation
+at the Armagh Observatory (Queen's University Belfast) in Northern Ireland,
+and completed **post-doctoral research** at the University of Hertfordshire, where I used large telescopes to map our Milky Way and gained **teaching experience** by lecturing undergraduate courses on software engineering and statistics.
 
-Finally, I was given the incredible opportunity to join **NASA**.
+In 2015, I was given the incredible opportunity to join **NASA**, where I work now.
 
 
 Career
