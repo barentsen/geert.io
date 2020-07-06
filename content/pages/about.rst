@@ -4,58 +4,40 @@ About me
 :author: Geert
 :slug: about
 
-Hi there! My name is **Geert**, which is a funny Dutch name.
 
-I am an **Astronomer** and **Computer Scientist**
-at the NASA Ames Research Center in sunny **Silicon Valley**, California.
+Hi there! 👋  My name is *Geert*, which is Dutch for *Gerard*.
 
-I help run NASA's **Kepler/K2 Space Telescope**,
-which is discovering **Earth-like planets orbiting other stars**
-and has yielded a huge, revolutionary data set
-that is aiding all areas of astrophysics.
+I am a software engineer with a curiosity for science gone out of hand.
+I have degrees in both Computer Science (MSc) and Physics (PhD)
+and benefit from 10+ years experience in building open source
+scientific software and analyzing data.
+My experience includes diverse projects at three universities 👨‍🎓,
+two space agencies 🚀, and one meteorological institute 🌤.
+My journey allowed me to work in five countries and three languages so far.
 
-I became an astronomer because I love to analyze data using powerful tools such as **Python**, **PostgreSQL**, and **high-performance computing**.
-I believe that computers are a bicycle for the brain and I like to cycle them as far and as fast as I can. 🚴
-
-I obtained my undergraduate degree in computer science
-at the University of Antwerp in Belgium,
-where I focused on **statistics**, **probability theory**, **databases**, and **machine learning**.
-
-After my undergraduate studies,
-I tackled data analysis challenges
-during internships at 
-the **Meteorological Institute of Belgium** and
-the **European Space Agency**.
-
-I then went on to obtain a **PhD in Astrophysics** on the top of star formation
-at the Armagh Observatory (Queen's University Belfast) in Northern Ireland,
-and completed **post-doctoral research** at the University of Hertfordshire, where I used large telescopes to map our Milky Way and gained **teaching experience** by lecturing undergraduate courses on software engineering and statistics.
-
-In 2015, I was given the incredible opportunity to join **NASA**, where I work now.
-
+In recent years, I was part of the team that rescued NASA's award-winning
+Kepler Space Telescope. I was privileged to experience first hand how a small
+team of skilled engineers can achieve miracles when given the freedom to take
+risks, prototype rapidly, and collaborate in a positive culture.
+It enabled us to rescue the spacecraft and extend the mission by four years,
+leading to the discovery of 300+ new planets across the galaxy.
 
 Career
 ~~~~~~
+- 2017-now: Community Support Director, **NASA Kepler Mission** (USA)
+- 2015-2017: Astrophysicist, **NASA Kepler Mission** (USA)
+- 2012-2015: Research & Teaching Assistant, **University of Hertfordshire** (UK)
+- 2008-2012: Physics PhD Student, **Queen's University Belfast** (UK)
+- 2007-2008: Software Engineer Intern, **European Space Agency** (The Netherlands)
+- 2006-2007: Climate Research Assistant, **Royal Meteorological Institute** (Belgium)
 - 2002-2006: MSc Computer Science, **University of Antwerp** (Belgium)
-- 2006-2007: Research Assistant, **Royal Meteorological Institute** (Belgium)
-- 2007-2008: Young Graduate Trainee, **European Space Agency** (The Netherlands)
-- 2008-2012: PhD Astrophysics, **Queen's University Belfast** (UK)
-- 2012-2015: Post-doctoral Research Assistant, **University of Hertfordshire** (UK)
-- 2015-now: Research Scientist, **NASA** (USA)
 
-Research interests
-~~~~~~~~~~~~~~~~~~
--  Astrophysics: star formation, exoplanets, solar system.
--  Astronomical surveys: Kepler, K2, `IPHAS`_, `VPHAS`_, LSST.
--  Computing: probabilistic models, MCMC, data visualisation.
-
-Specialties
-~~~~~~~~~~~
-- object-oriented software engineering using Python, Java, C/C++, PHP;
-- web development using Javascript, JQuery, Bootstrap, etc;
-- data cleaning, processing and archiving using unix tools and database systems;
-- hierarchical probabilistic (Bayesian) inference and machine learning;
-- data visualization;
+Skills
+~~~~~~
+- software engineering using Python, Java, C/C++;
+- web development using Javascript, JQuery, Bootstrap;
+- data processing and visualization using database systems;
+- statistical inference and machine learning;
 - presenting scientific results to an audience of experts or non-experts.
 
 Things I have created
@@ -72,8 +54,6 @@ Other highlights
 ~~~~~~~~~~~~~~~~
 -  My interviews with `BBC News`_, `Nature`_, `Sky At Night`_.
 -  Asteroid 22275 is `named after me`_.
--  All-hailed on `episode 121`_ of the Recycled Electrons podcast.
-
 
 
 .. NASA Astronomy Picture Of the Day
@@ -114,5 +94,3 @@ Other highlights
 .. _a detailed atlas of our own Galaxy: /iphas-dr2-catalogue.html
 .. _scientific publications: http://adsabs.harvard.edu/cgi-bin/nph-basic_connect?qsearch=Barentsen%2C+Geert
 .. _onto the BBC news website: http://www.bbc.co.uk/news/science-environment-21442863
-
-.. _episode 121: http://recycledelec.com/post/98979395827/121-i-am-not-troubled-by-any-competence

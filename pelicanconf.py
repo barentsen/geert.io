@@ -29,8 +29,7 @@ CUSTOM_CSS = 'static/geert.css'
 
 LINKS = (('home', '/'),
          ('about me', '/pages/about.html'),
-         ('talks', 'https://speakerdeck.com/barentsen'),
-         ('publications', 'http://adsabs.harvard.edu/cgi-bin/nph-basic_connect?qsearch=Barentsen%2C+Geert'),)
+         ('publications', 'https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en'),)
 
 
 DEFAULT_PAGINATION = 50
@@ -38,7 +37,7 @@ DEFAULT_PAGINATION = 50
 THEME = 'flex-theme'
 SITELOGO = 'https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg'
 SITETITLE = 'Geert Barentsen'
-SITESUBTITLE = 'NASA Astronomer in Silicon Valley'
+SITESUBTITLE = 'Scientist & Software Engineer'
 
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/barentsen'),
           ('twitter', 'https://twitter.com/geerthub'),

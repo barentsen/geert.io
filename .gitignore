@@ -3,3 +3,4 @@ __pycache__
 *.pid
 old-website
 sandbox
+.vscode
