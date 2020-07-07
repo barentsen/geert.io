@@ -1,6 +1,5 @@
 body {
     line-height: 1.62em;
-    font-size: 1.2em;
 }
 
 aside div p {
@@ -31,10 +30,6 @@ a.btn:hover {
 /* Subtitles inside articles */
 div.section h2 {
     font-size: 1.5em;
-}
-
-main {
-    margin-top: 1em;
 }
 
 div.figure img {

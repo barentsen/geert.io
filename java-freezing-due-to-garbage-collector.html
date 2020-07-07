@@ -2,12 +2,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/font-awesome/css/font-awesome.min.css">
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://www.geert.io/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://www.geert.io/theme/font-awesome/css/solid.css">
 
     <link href="https://www.geert.io/static/geert.css" rel="stylesheet">
 
@@ -15,19 +27,26 @@
 
 
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-69171-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <meta name="author" content="Geert" />
-<meta name="description" content="I regularly open huge images and tables (>1 GB) in interactive Java-based (astronomy) software such as Aladin and TopCat. Because of the way memory allocation works in Java, the area where objects reside in memory (called the heap) needs to be reserved up front using Java's -Xmx switch. Hence I …" />
+<meta name="description" content="I regularly open huge images and tables (&gt;1 GB) in interactive Java-based (astronomy) software such as Aladin and TopCat. Because of the way memory allocation works in Java, the area where objects reside in memory (called the heap) needs to be reserved up front using Java&#39;s -Xmx switch. Hence I …" />
 <meta name="keywords" content="Aladin, Java, Topcat">
+
+
 <meta property="og:site_name" content="Geert Barentsen"/>
 <meta property="og:title" content="Is Java freezing your system? Tune the garbage collector!"/>
-<meta property="og:description" content="I regularly open huge images and tables (>1 GB) in interactive Java-based (astronomy) software such as Aladin and TopCat. Because of the way memory allocation works in Java, the area where objects reside in memory (called the heap) needs to be reserved up front using Java's -Xmx switch. Hence I …"/>
+<meta property="og:description" content="I regularly open huge images and tables (&gt;1 GB) in interactive Java-based (astronomy) software such as Aladin and TopCat. Because of the way memory allocation works in Java, the area where objects reside in memory (called the heap) needs to be reserved up front using Java&#39;s -Xmx switch. Hence I …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://www.geert.io/java-freezing-due-to-garbage-collector.html"/>
 <meta property="og:type" content="article"/>
@@ -43,31 +62,54 @@
   <title>Geert Barentsen &ndash; Is Java freezing your system? Tune the garbage collector!</title>
 
 </head>
-<body>
+<body class="light-theme">
   <aside>
     <div>
-      <a href="/">
+      <a href="https://www.geert.io">
         <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
       </a>
-      <h1><a href="https://www.geert.io">Geert Barentsen</a></h1>
+
+      <h1>
+        <a href="https://www.geert.io">Geert Barentsen</a>
+      </h1>
 
 <p>Scientist & Software Engineer</p>
+
       <nav>
         <ul class="list">
-          <li><a href="/">home</a></li>
-          <li><a href="/pages/about.html">about me</a></li>
-          <li><a href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en">publications</a></li>
+
+
+
+            <li>
+              <a target="_self" href="/" >home</a>
+            </li>
+            <li>
+              <a target="_self" href="/pages/about.html" >about me</a>
+            </li>
+            <li>
+              <a target="_self" href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en" >publications</a>
+            </li>
         </ul>
       </nav>
 
       <ul class="social">
-        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/geerthub" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="sc-github" href="https://github.com/barentsen" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/geerthub" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/barentsen" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
       </ul>
     </div>
-
 
   </aside>
   <main>
@@ -75,10 +117,10 @@
 
 <article class="single">
   <header>
+      
     <h1 id="java-freezing-due-to-garbage-collector">Is Java freezing your system? Tune the garbage collector!</h1>
     <p>
-          Posted on Tue 26 March 2013 in <a href="https://www.geert.io/category/computing.html">computing</a>
-
+      Posted on Tue 26 March 2013 in <a href="https://www.geert.io/category/computing.html">computing</a>
 
     </p>
   </header>
@@ -138,41 +180,16 @@ in memory-intensive Java applications.</p>
 
 
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'geert';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>
-        Please enable JavaScript to view comments.
 
-</noscript>
 </article>
 
     <footer>
-<p>&copy; Geert Barentsen 
-—
-powered by <a href="http://getpelican.com">Pelican</a>
-—
-you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> on GitHub.
+<p>&copy; Geert Barentsen 2020</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
 </p>    </footer>
   </main>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-69171-3', 'auto');
-  ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
 
 
 
@@ -186,5 +203,7 @@ you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> o
   "description": ""
 }
 </script>
+
+
 </body>
 </html>
