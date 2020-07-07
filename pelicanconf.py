@@ -28,10 +28,11 @@ EXTRA_PATH_METADATA = {
 }
 CUSTOM_CSS = 'static/geert.css'
 
+DISPLAY_PAGES_ON_MENU = False
+
 LINKS = (('home', '/'),
          ('about me', '/pages/about.html'),
          ('publications', 'https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en'),)
-
 
 DEFAULT_PAGINATION = 50
 
@@ -43,3 +44,6 @@ SITESUBTITLE = 'Scientist & Software Engineer'
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/barentsen'),
           ('twitter', 'https://twitter.com/geerthub'),
           ('github', 'https://github.com/barentsen'))
+
+COPYRIGHT_NAME = "Geert Barentsen"
+COPYRIGHT_YEAR = "2020"
