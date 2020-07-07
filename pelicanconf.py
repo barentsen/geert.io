@@ -42,5 +42,4 @@ SITESUBTITLE = 'Scientist & Software Engineer'
 
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/barentsen'),
           ('twitter', 'https://twitter.com/geerthub'),
-          ('github', 'https://github.com/barentsen'),
-          ('rss', '/feeds/all.atom.xml'))
+          ('github', 'https://github.com/barentsen'))
