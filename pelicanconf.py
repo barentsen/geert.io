@@ -24,6 +24,7 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'extra/geert.css': {'path': 'static/geert.css'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 CUSTOM_CSS = 'static/geert.css'
 

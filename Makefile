@@ -10,7 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 S3_BUCKET=www.geert.io
 
-GITHUB_PAGES_BRANCH=master
+GITHUB_PAGES_BRANCH=gh-pages
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
