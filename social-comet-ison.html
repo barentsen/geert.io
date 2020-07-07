@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://www.geert.io/static/geert.css" rel="stylesheet">
+
+    <link href="http://www.geert.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Geert Barentsen Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Geert" />
+<meta name="description" content="Users of Twitter posted up to 12,000 messages per hour during Comet ISON's perilous encounter with the Sun last Friday. Events like this provide us with an opportunity to understand the demographics of the audience exposed to astronomy through social media. Using the public API provided by Twitter, I …" />
+<meta name="keywords" content="">
+<meta property="og:site_name" content="Geert Barentsen"/>
+<meta property="og:title" content="Social Comet ISON Statistics"/>
+<meta property="og:description" content="Users of Twitter posted up to 12,000 messages per hour during Comet ISON's perilous encounter with the Sun last Friday. Events like this provide us with an opportunity to understand the demographics of the audience exposed to astronomy through social media. Using the public API provided by Twitter, I …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://www.geert.io/social-comet-ison.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2013-12-02 10:00:00-08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://www.geert.io/author/geert.html">
+<meta property="article:section" content="comets"/>
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg">
+
+  <title>Geert Barentsen &ndash; Social Comet ISON Statistics</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="/">
+        <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
+      </a>
+      <h1><a href="http://www.geert.io">Geert Barentsen</a></h1>
+
+<p>Scientist & Software Engineer</p>
+      <nav>
+        <ul class="list">
+          <li><a href="/">home</a></li>
+          <li><a href="/pages/about.html">about me</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en">publications</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/geerthub" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/barentsen" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+    <h1 id="social-comet-ison">Social Comet ISON Statistics</h1>
+    <p>
+          Posted on Mon 02 December 2013 in <a href="http://www.geert.io/category/comets.html">comets</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Users of Twitter posted up to 12,000 messages per hour during Comet ISON's <a class="reference external" href="http://www.bbc.co.uk/news/science-environment-25143861">perilous encounter</a> with the Sun last Friday. Events like this provide us with an opportunity to understand the demographics of the audience exposed to astronomy through social media.</p>
+<p>Using the <a class="reference external" href="https://dev.twitter.com/docs/api/1.1/post/statuses/filter">public API</a> provided by Twitter, I was able to automatically collect the thousands of comet-related messages by querying for tweets containing the keyword &quot;ISON&quot;.
+During the ten-day period between November 20 and 30, I harvested 331,952 tweets about the doomed little planet in this way. The messages originated from no less than 141,899 unique Twitter accounts.</p>
+<p>The social activity peaked in the evening of November 29th, which is when the ill-fated object was prematurely pronounced dead on Twitter by several high-profile accounts such as NASA, ESA and BBC. At that time, the activity jumped to 3 tweets per second (tps) for several hours, which is impressive if you consider that Michael Jackson's death in 2009 peaked only 150 times higher <a class="reference external" href="http://www.telegraph.co.uk/technology/twitter/9945505/Twitter-in-numbers.html">at 456 tps</a>. Reports of ISON's death were greatly exaggerated however, whilst Jackson's wasn't.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2013-ison-twitter-annotated.png"><img alt="Tweets per hour during Comet ISON's close encounter with the Sun." src="http://www.geert.io/images/2013-ison-twitter-annotated.png" /></a>
+<p class="caption">Number of tweets containing the word ISON during the Comet's close encounter with the Sun. All times are in Universal Time (UT).</p>
+</div>
+<p>A reason for collecting social data like these is that they may inform us about the demographics of the audience reached through social media. Indeed, in addition to the messages themselves, the Twitter API offers indirect information on the user's profile such as their location, their followers and past tweets.
+Understanding the audience is useful because astronomical outreach is often hampered by the problem of <cite>preaching to the converted</cite>, that is, many activities tend to reach people who were already astronomy fans at the outset. It is possible that outreach carried out through social media is less affected by this problem, but it is not obvious and could be tested. (Also see my <a class="reference external" href="http://www.geert.io/comet-panstarrs-attracts-2x-more-men-than-women.html">previous post</a> on using YouTube analytics for this purpose.)</p>
+<p>Having said all that, I haven't actually tried to infer any demographics from these data at present. Doing so would involve building a probabilistic model to infer e.g. gender and ethnicity (from the profile picture) and affinity with science (from past tweets). This requires algorithms which are more likely to be found in the marketing departments of large corporations rather than on code-sharing sites like GitHub, and hence the task is not trivial.</p>
+<p>Anyone interested in this data science challenge?</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'geert';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+</article>
+
+    <footer>
+<p>&copy; Geert Barentsen 
+—
+powered by <a href="http://getpelican.com">Pelican</a>
+—
+you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> on GitHub.
+</p>    </footer>
+  </main>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69171-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Geert Barentsen ",
+  "url" : "http://www.geert.io",
+  "image": "https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

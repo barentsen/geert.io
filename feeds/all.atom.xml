@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Geert Barentsen</title><link href="http://www.geert.io/" rel="alternate"></link><link href="http://www.geert.io/feeds/all.atom.xml" rel="self"></link><id>http://www.geert.io/</id><updated>2014-10-15T00:00:00-07:00</updated><subtitle>Scientist &amp; Software Engineer</subtitle><entry><title>The exponential spread of the Ebola virus</title><link href="http://www.geert.io/exponential-growth-of-ebola.html" rel="alternate"></link><published>2014-10-15T00:00:00-07:00</published><updated>2014-10-15T00:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-10-15:/exponential-growth-of-ebola.html</id><summary type="html">&lt;p class="first last"&gt;Three weeks have passed since my original post, and Ebola has continued to spread exponentially since. At the present rate, the number of &lt;em&gt;reported&lt;/em&gt; cases of Ebola appears to double every 29 days.&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="update-15-oct-2014-is-the-spread-of-ebola-slowing-or-is-the-data-getting-less-accurate"&gt;
+&lt;h2&gt;Update 15 Oct 2014: is the spread of Ebola slowing, or is the data getting less accurate?&lt;/h2&gt;
+&lt;p&gt;At the end of July, I posted a graph
+which highlighted the scary exponential growth
+in the number of Ebola infections in West Africa.
+When I updated the graph with fresh data in August and September (see below),
+the exponential rate of growth appeared to be ever increasing.
+It was a somber trend which should have set off alarm bells
+across governments much sooner than it did.&lt;/p&gt;
+&lt;p&gt;I updated the graph again today.
+Interestingly, for the first time since July,
+a simple exponential curve no longer appears to
+fit the most recent data.
+Is the rate of growth slowing down?&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20141015.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20141015.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;It is too early to be delighted about this apparent curving
+of the trend.
+As Lynn Magoon &lt;a class="reference external" href="#comment-1636400534"&gt;pointed out&lt;/a&gt; in the discussion thread below,
+the World Health Organization (WHO) believes that the apparent
+decrease in the number of new cases reflects the increasing problem
+of gathering accurate data.
+In their &lt;a class="reference external" href="http://apps.who.int/iris/bitstream/10665/136020/1/roadmapsitrep_8Oct2014_eng.pdf"&gt;Situation Report&lt;/a&gt; of October 8th, the WHO wrote:&lt;/p&gt;
+&lt;blockquote&gt;
+&amp;quot;It should be emphasized that the reported fall in the number of new cases in Liberia over the past three weeks is unlikely to be genuine. Rather, it reflects a deterioration in the ability of overwhelmed responders to record accurate epidemiological data.&amp;quot;&lt;/blockquote&gt;
+&lt;!-- We can only hope that this not the case, because the virus is now starting to spread very rapidly at over 1000 new cases a week. --&gt;
+&lt;p&gt;As a result of this remark,
+the red exponential curve in the graph has been fitted
+using only the data from July 2nd through September 17th.
+Ignoring the data from the last three weeks is,
+in some sense, the simplest imaginable way to model
+the systematic underestimation of the recent numbers.
+Although a logistic function would offer a much better fit to the data,
+it would not take this extra knowledge into account.&lt;/p&gt;
+&lt;p&gt;If the exponential curve in the graph is an accurate model of the reality,
+then there would be 20 000 cases by the end of October,
+48 000 by the end of November,
+and 116 000 by the end of December.
+Let's hope that this simple model proves to be wrong.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="update-17-sep-2014"&gt;
+&lt;h2&gt;Update (17 Sep 2014)&lt;/h2&gt;
+&lt;p&gt;Seven weeks have now passed since I posted my original graph,
+and the number of &lt;em&gt;reported&lt;/em&gt; Ebola cases has continued its exponential growth.
+In fact an updated version of the graph, shown below,
+suggests that the growth rate is getting even worse.
+An exponential fit to the number of cases
+from mid-July through to mid-September suggests that
+their number now doubles every 24.3 days
+(as opposed to every 29 days previously).
+This may be explained by the fact that the
+data is now more strongly dominated by the regions
+where the disease is not under control however,
+or by improved reporting procedures,
+rather than being due to a change in the nature of the epidemic.
+I hope to examine the data in more detail in the near future to understand.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140917.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140917.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Again, the source of the data is &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa#Timeline_of_cases_and_deaths"&gt;the Wikipedia page on the outbreak&lt;/a&gt;,
+which is based on official information from the health ministries
+of the affected countries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="update-21-aug-2014"&gt;
+&lt;h2&gt;Update (21 Aug 2014)&lt;/h2&gt;
+&lt;p&gt;Three weeks have passed since I posted my original graph
+on the exponential spread of the Ebola virus,
+so I am now publishing a new version which includes more recent data.
+The updated graph shows that Ebola has continued to spread exponentially,
+with no sign of slowing down yet.
+The regression fit suggests that,
+at the present rate, the number of
+&lt;em&gt;reported&lt;/em&gt; cases of Ebola doubles every 29 days (ie. log[2]/0.024 = 29):&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140821.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140821.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The data is taken from &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa#Timeline_of_cases_and_deaths"&gt;the Wikipedia page on the outbreak&lt;/a&gt;
+and is based on official information from the health ministries
+of the affected countries. According to the World Health Organization however,
+these numbers &amp;quot;&lt;a class="reference external" href="http://www.bbc.co.uk/news/world-africa-28798542"&gt;vastly underestimate the magnitude of the outbreak&lt;/a&gt;&amp;quot;.
+That is scary!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="original-post-30-jul-2014"&gt;
+&lt;h2&gt;Original post (30 Jul 2014)&lt;/h2&gt;
+&lt;p&gt;I made a quick plot this morning
+which attempts to make a point
+about the nature of exponential growth.
+Let me stress that I am of course not an epidemiologist,
+all I know is how to fit an exponential curve when I see one.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-cases.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-cases.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="data"></category></entry><entry><title>Science using Twitter: when do people see spiders?</title><link href="http://www.geert.io/spiders-on-twitter.html" rel="alternate"></link><published>2014-09-30T07:00:00-07:00</published><updated>2014-09-30T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-09-30:/spiders-on-twitter.html</id><summary type="html">&lt;p&gt;It has been a mild autumn in the UK,
+which has &lt;a class="reference external" href="http://www.bbc.co.uk/news/uk-england-somerset-29283020"&gt;led researchers to predict&lt;/a&gt;
+that we may see more spiders than usual this year.
+The theory goes that mild weather causes more insects to be around,
+which in turn implies that there is more prey for our eight-legged friends …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It has been a mild autumn in the UK,
+which has &lt;a class="reference external" href="http://www.bbc.co.uk/news/uk-england-somerset-29283020"&gt;led researchers to predict&lt;/a&gt;
+that we may see more spiders than usual this year.
+The theory goes that mild weather causes more insects to be around,
+which in turn implies that there is more prey for our eight-legged friends
+to feast on.&lt;/p&gt;
+&lt;p&gt;Judging from my own Facebook and Twitter timelines,
+I certainly have the &lt;em&gt;impression&lt;/em&gt; that this prediction is accurate.
+In recent weeks, a significant number of my friends
+have been posting stories about arachnids,
+but is this pattern true in general?
+We can find out!
+An interesting consequence of the digitisation
+of our social lives
+is that we now have the ability to turn such anecdotal evidence
+into &lt;em&gt;statistical samples&lt;/em&gt;
+(some might even call this &lt;em&gt;data science&lt;/em&gt;),
+and I have been exploring this idea.&lt;/p&gt;
+&lt;div class="section" id="spider-sightings-on-twitter"&gt;
+&lt;h2&gt;Spider sightings on Twitter&lt;/h2&gt;
+&lt;p&gt;Over the past two years, I have been using the &lt;a class="reference external" href="https://dev.twitter.com/streaming/reference/post/statuses/filter"&gt;Twitter API&lt;/a&gt;
+to count the number of messages
+on the social network site that contained the word &amp;quot;spider&amp;quot;
+in several languages.
+I also obtained the meta data for each of these tweets,
+allowing me to determine the geographic region
+of each message based on the user's time zone.&lt;/p&gt;
+&lt;p&gt;The graph below shows the number of tweets
+originating from Britain
+that contained the word &amp;quot;spider&amp;quot;.
+There have been more than 1 million of such tweets
+between January 2012 and now, posted by 446&amp;nbsp;000 unique users.
+Interestingly, the data confirm a significant seasonal variation:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-per-day.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-spider-tweets-per-day.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Number of tweets per day in Britain that contained the word &amp;quot;spider&amp;quot;.
+Retweets, replies, and tweets about Spider-Man have been excluded.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The seasonal pattern is interesting because the number of tweets
+can be considered to be a proxy
+for the amount of big spiders that are running around British homes.
+This is of course based on the assumption that people are more likely
+to use the word &amp;quot;spider&amp;quot; when they have just seen one,
+and although some noise exists,
+you can easily check for yourself that it is a reasonable assumption
+by &lt;a class="reference external" href="https://twitter.com/search?q=spider"&gt;searching for &amp;quot;spider&amp;quot; on Twitter&lt;/a&gt;.
+Here is an example:&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;THERE WAS A BIG ASS SPIDER ON MY BED SO I JUMPED UP ONTO MY DRESSER IM GONNA DIE . IM TERRIFIED OF SPIDERS DAMN YOU SPIDER FUCK&lt;/p&gt;&amp;mdash; Sheℓby ∞  (@Shelbae_x3) &lt;a href="https://twitter.com/Shelbae_x3/status/513900722178772992"&gt;September 22, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;Of course not all tweets provide similar clear-cut evidence of a spider
+sighting.
+Roughly 30% of the tweets relate to the Spider-Man movies,
+but at the end of this post I will explain how
+such noise has been excluded from the statistics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-correlation-with-temperature"&gt;
+&lt;h2&gt;The correlation with temperature&lt;/h2&gt;
+&lt;p&gt;The data above suggest that spider sightings ramp up in spring,
+are most common in late summer and early autumn,
+and become rare in winter.
+Although it is too early to judge whether 2014 is an exceptional year,
+we may already infer that British people are roughly 5 to 10 times more likely
+to tweet about spiders in September than in January.&lt;/p&gt;
+&lt;p&gt;This seasonal pattern is often explained in the media
+by a combination of three reasons:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;it is thought that some spider species head indoors once it gets cold and wet outside;&lt;/li&gt;
+&lt;li&gt;autumn is the breeding season, which is when male spiders are known to start running around like obsessed maniacs in search for a female partner;&lt;/li&gt;
+&lt;li&gt;autumn is also the time of the year when central heating systems are being turned on, which produces strong temperature variations that are thought to give house spiders &lt;a class="reference external" href="http://www.theguardian.com/commentisfree/2014/sep/23/horny-male-spiders-scare-stories"&gt;a hormonal flush that makes them extra horny&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Because the weather appears to be a likely factor,
+I decided to add the &lt;a class="reference external" href="http://www.metoffice.gov.uk/hadobs/hadcet/"&gt;mean Central England Temperature&lt;/a&gt;
+to the graph.
+The result is a fascinating correlation:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-correlate-with-temperature.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-spider-tweets-correlate-with-temperature.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Number of British spider tweets per day (top), shown against the mean temperature in Central England obtained from the UK Met Office (bottom).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;At this point I must stress that
+&lt;em&gt;correlation does not imply causation&lt;/em&gt;.
+Although temperature is very likely to be a part of the story,
+the true reason for spotting more spiders in the autumn
+is likely to be a complicated mix of factors
+which include daylight times, rainfall, central heating, instincts, human behaviour, and so on.
+I am not troubled by any competence on this topic at all,
+so please post a comment below if you can elucidate the pattern for me.&lt;/p&gt;
+&lt;p&gt;The graph does point at some interesting events
+which warrant further investigation.
+For example, there appears to be an exceptional peak in
+&lt;em&gt;both&lt;/em&gt; the spider activity and the temperature in May 2012.
+Indeed many will remember that month as being exceptionally
+warm across the UK.
+Did the unusual weather cause spiders to wake up early
+and leave their cosy winter webs,
+or was it the humans who woke up and ventured into nature?
+I do not know the answer to this question at present,
+but it is likely that the &lt;em&gt;content&lt;/em&gt; of the tweets from that period
+may provide clues.
+I hope to analyse them in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-about-a-different-climate"&gt;
+&lt;h2&gt;What about a different climate?&lt;/h2&gt;
+&lt;p&gt;If the spider tweets are a genuine proxy for the behaviour of spiders,
+and if the temperature is indeed a key factor,
+then we may expect to see different patterns in different climates.
+To test this idea, I compared the average distribution of spider tweets
+per month between Britain and Australia.
+The result is once again fascinating:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-peak-in-september.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-spider-tweets-peak-in-september.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Distribution of spider tweets as a function of the month for British and
+Australian users of Twitter. Based on averaged data between 2012 and 2014.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The graph shows that British users appear to talk about spiders
+most often in September, whilst Australians do so in January.
+The seasonal spider pattern is less pronounced down under,
+which may be explained by the fact that there is less of a contrast
+between summer and winter temperatures in Australia.
+It is also possible that Australians are somewhat less likely to tweet
+about spiders because they are more used to them
+(or because they are more likely to be killed before they can tweet).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="noise-and-future-improvements"&gt;
+&lt;h2&gt;Noise and future improvements&lt;/h2&gt;
+&lt;p&gt;In future work, I hope to exploit the content
+of the tweets using language and image analysis methods.
+The inclusion of text analysis would be useful
+because there is a fair amount of &lt;em&gt;social noise&lt;/em&gt;
+when it comes to the use of the word &amp;quot;spider&amp;quot;.
+To create the graphs shown above,
+I decided to apply a simple noise filter as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;retweets and replies were excluded to reduce the impact of media stories and celebrities;&lt;/li&gt;
+&lt;li&gt;tweets about Spider-Man were ignored by excluding tweets containing the word &amp;quot;man&amp;quot; (amounting to 30% of the data set);&lt;/li&gt;
+&lt;li&gt;tweets about the viral &lt;a class="reference external" href="https://www.youtube.com/watch?v=YoB8t0B4jx4"&gt;Mutant Giant Spider Dog&lt;/a&gt; video on YouTube were ignored by excluding tweets containing the word &amp;quot;mutant&amp;quot; (1% of the data set).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moreover, I decided to exclude a few specific days
+which were dominated by tweets about celebrities.
+I removed the data for:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;24 Apr 2013: because a member of One Direction &lt;a class="reference external" href="http://www.onedirection.net/daily-1d-tweet-round-up-24th-april-2013/"&gt;instagrammed a spider&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;13 Nov 2012: because a politician &lt;a class="reference external" href="http://www.telegraph.co.uk/culture/tvandradio/9676266/Im-A-Celebrity-Nadine-Dorries-eats-a-testicle.html"&gt;ate a baked spider&lt;/a&gt; on TV;&lt;/li&gt;
+&lt;li&gt;19 May 2012: because the haircut of a football player &lt;a class="reference external" href="http://sports.yahoo.com/blogs/soccer-dirty-tackle/salomon-kalou-hair-spider-fascinating-didier-drogba-195406906.html"&gt;featured a spider&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Although this simple noise filter can no doubt be improved,
+a manual inspection of randomly selected tweets
+leads me to believe that the vast majority of the remaining sample
+relates to genuine spider sightings.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusions"&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Human mankind is the biggest and most powerful &lt;em&gt;sensor network&lt;/em&gt; on this planet,
+and social media allows us to exploit their observations more efficiently
+than ever before.
+In this post I used more than 1 million tweets from 446&amp;nbsp;000 unique users
+to gain insights into the behaviour of spiders in Britain
+(and the humans that encounter them).
+I found that people are 5 to 10 times
+more likely to tweet about spiders in late autumn than in winter.
+This pattern likely corresponds to a true increase in the number of
+encounters between spiders and humans, and appears to correlate strongly
+with the local mean temperature.&lt;/p&gt;
+&lt;p&gt;I am unable to distribute the data set
+because I would likely get into trouble with Twitter.
+However, if you are familiar with the scientific literature
+on spiders (which I am not),
+and if you would like to help me turn this data into a paper,
+then please get in touch or leave a comment below.&lt;/p&gt;
+&lt;p&gt;The tools used to create these graphs are
+Amazon EC2 (for collecting the tweets),
+Python (parsing),
+SQLite (data exploration and statistics),
+and matplotlib (visualisation) using a &lt;a class="reference external" href="https://github.com/barentsen/boilerplates/tree/master/python"&gt;custom configuration file&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="data"></category></entry><entry><title>Citizen Meteor Science: Summary of the 2014 IMO Conference</title><link href="http://www.geert.io/international-meteor-conference-2014-summary.html" rel="alternate"></link><published>2014-09-24T07:00:00-07:00</published><updated>2014-09-24T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-09-24:/international-meteor-conference-2014-summary.html</id><summary type="html">&lt;p&gt;I had the pleasure to take part in the
+&lt;a class="reference external" href="http://www.imo.net/imc2014"&gt;International Meteor Conference&lt;/a&gt; this weekend,
+which is an annual meeting organised by the
+&lt;a class="reference external" href="http://www.imo.net"&gt;International Meteor Organisation&lt;/a&gt; (for which I am a council member).
+The IMO is an international non-profit organisation
+which exists to encourage international cooperation
+between amateur astronomers in the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I had the pleasure to take part in the
+&lt;a class="reference external" href="http://www.imo.net/imc2014"&gt;International Meteor Conference&lt;/a&gt; this weekend,
+which is an annual meeting organised by the
+&lt;a class="reference external" href="http://www.imo.net"&gt;International Meteor Organisation&lt;/a&gt; (for which I am a council member).
+The IMO is an international non-profit organisation
+which exists to encourage international cooperation
+between amateur astronomers in the field of meteor science.
+Topics discussed include the observation of meteor showers using
+various methods, the modeling of the parent meteoroid streams,
+and the study of the occasional meteorite-dropping fireball events.&lt;/p&gt;
+&lt;p&gt;The study of these phenomena is limited
+to a large degree by our ability
+to monitor Earth's atmosphere across the globe in
+a continuous fashion.
+The field only counts about 100 full-time professionals
+worldwide,
+and hence amateur astronomers play a critical role
+in contributing and analysing the much-needed data.
+Out of the 130 participants that attend the meeting,
+roughly 10% are professional and 90% are amateur.
+Many of the amateurs carry out their work
+at a professional level, but are called &lt;em&gt;amateurs&lt;/em&gt;
+simply because they are not being paid to do so.&lt;/p&gt;
+&lt;div class="section" id="summarising-the-conference"&gt;
+&lt;h2&gt;Summarising the conference&lt;/h2&gt;
+&lt;p&gt;I have been attending the conference for ten years now,
+and in fact helped to organise it twice
+(in &lt;a class="reference external" href="http://www.imo.net/imc2005/"&gt;2005&lt;/a&gt; and &lt;a class="reference external" href="http://www.imo.net/imc2010/"&gt;2010&lt;/a&gt;).
+These meetings are important to me because they allowed me to gain
+experience in presenting and publishing scientific results
+when I was still an undergraduate student,
+and hence played an important role in enabling me to become an astronomer.
+They are also great fun because the participants
+actually &lt;em&gt;love&lt;/em&gt; the subject (&amp;quot;amator&amp;quot; means &amp;quot;lover&amp;quot; after all).
+This implies that the participants tend to be driven entirely by curiosity,
+rather than the publication or funding pressure which makes
+so many professional academics behave in absurd ways
+(as per Darwin's theory of natural selection).&lt;/p&gt;
+&lt;p&gt;This year I was invited to present a &lt;em&gt;conference summary&lt;/em&gt;
+as the last talk of the meeting.
+This means that,
+when all the sensible people went to bed
+on the last evening of the conference,
+I grabbed my laptop and summarised the meeting's
+41 talks and 17 posters
+(which are all &lt;a class="reference external" href="http://www.imo.net/imc2014/program.php"&gt;available on the conference website&lt;/a&gt;).
+I decided to approach this challenge by selecting one
+&lt;em&gt;key slide&lt;/em&gt; from each of the speakers,
+and combining them into a coherent story.&lt;/p&gt;
+&lt;p&gt;The slides of my 20-minute summary are shown here
+(you can also &lt;a class="reference external" href="https://speakerd.s3.amazonaws.com/presentations/8f68afb024ca01326e49064769dcc1c7/repaired.pdf"&gt;download the PDF&lt;/a&gt;):&lt;/p&gt;
+&lt;script async class="speakerdeck-embed" data-slide="1" data-id="8f68afb024ca01326e49064769dcc1c7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;&lt;p&gt;Of course the slides do not include the various comments I made,
+or the inevitable jokes,
+but they do offer a feeling for the contents of the meeting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-orbit-data-revolution"&gt;
+&lt;h2&gt;The orbit data revolution&lt;/h2&gt;
+&lt;p&gt;The first thing I pointed out during the summary is that
+we are seeing a spectacular increase in the number of automated
+camera networks that operate to detect meteors.
+For example, during the meeting we learned that such networks
+are now extending beyond Europe, USA, Japan
+into e.g. Brazil and Morocco,
+thereby increasing our global view on the meteor activity.
+This is important because many meteor showers
+harbour young, compact dust trails that produce
+intense but short-lived outbursts,
+which last no longer than about 30 minutes.
+Such outbursts can only ever be observed
+from selected regions on Earth where both
+the geometry and the weather are right,
+and hence a global view is needed to
+record all the outbursts in a systematic way
+and ultimately chart the detailed structure of
+all the meteoroid streams.&lt;/p&gt;
+&lt;p&gt;As well as recording more meteors,
+improvements in the data analysis software
+have led to a dramatic increase in the number of
+meteoroid orbits that are computed from
+those meteors (if observed simultaneously from multiple angles).
+I created the graph below,
+which shows the number of meteoroid orbits
+offered by the three most popular data sets that are &lt;em&gt;publicly available&lt;/em&gt;:
+the &lt;a class="reference external" href="http://sonotaco.jp/doc/SNM/"&gt;SonotaCo Database&lt;/a&gt; (Japanese amateurs),
+the &lt;a class="reference external" href="http://www.daa.fmph.uniba.sk/edmond"&gt;EDMOND Database&lt;/a&gt; (European amateurs),
+and the &lt;a class="reference external" href="http://www.astro.sk/IAUMDC/Ph2013/"&gt;IAU Photographic Database&lt;/a&gt; (professionals).
+The graph illustrates that the number of observed meteoroid orbits
+has increased by nearly two orders of magnitude in just a couple of years.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-meteoroid-orbit-databases.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-meteoroid-orbit-databases.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Cumulative number of meteoroid orbits available in three popular
+public data sets. The number of orbits has increased from
+about 4,000 in 2006 to more than 250,000 in 2013.
+(Note that additional public data sets by amateurs exist,
+e.g. the &lt;a class="reference external" href="http://cmn.rgn.hr/downloads/downloads.html"&gt;Croatian Meteor Network catalogues&lt;/a&gt;.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="why-are-meteors-being-recorded"&gt;
+&lt;h2&gt;Why are meteors being recorded?&lt;/h2&gt;
+&lt;p&gt;There are several good scientific reasons to obtain large
+statistical samples of meteors.
+These reasons include:
+(i) identifying new meteoroid streams,
+(ii) confirming the parameters of existing ones,
+(iii) testing dynamical models of their evolution,
+and (iv) computing the particle fluxes and mass distributions.
+Space agencies are particularly interested in the latter aspect,
+because meteoroids present an important hazard for spacecraft.
+The data are also of interest to the general public, indirectly,
+because they help predict when beautiful meteor shower displays
+will appear in the sky.&lt;/p&gt;
+&lt;p&gt;During my summary I reminded the audience that some of these
+science cases are better addressed using a small number
+of &lt;em&gt;very accurate&lt;/em&gt; orbits,
+rather than the current large sets of somewhat noisy orbits.
+I drew a parallel between asteroid science,
+where the &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Asteroid_family"&gt;study of asteroid dynamics&lt;/a&gt; revolves largely around
+the famous &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Asteroid_family#mediaviewer/File:AsteroidIncAu.png"&gt;inclination vs semi-major axis diagram&lt;/a&gt;,
+which reveals several asteroid families and the
+gravitational resonances that affect them.
+Models suggest that similar patterns exist
+in the population of meteoroids,
+but the accuracy of the observed orbits have so far proven
+insufficient to reveal such patterns in a routine way
+(see &lt;a class="reference external" href="https://speakerdeck.com/barentsen/meteor-astrometry-what-accuracy-do-we-need"&gt;my previous talk on this topic&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Fortunately, several talks at the conference
+discussed ways in which the accuracy of the data can be improved.
+For example:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.imo.net/imc2014/imc2014-Bettonvil-Chipolata.pdf"&gt;Felix Bettonvil&lt;/a&gt; (Utrecht) and &lt;a class="reference external" href="http://www.imo.net/imc2014/imc2014-egal.pdf"&gt;Auriane Egal&lt;/a&gt; (Paris) showed that a high-frequency electronic shutter can enable the accuracy of meteor velocities to be improved significantly, which in turn leads to better estimates for the semi-major axis (ie. the size of the orbit);&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.imo.net/imc2014/imc2014_colas.pdf"&gt;Francois Colas&lt;/a&gt; (Paris) plans to include doppler shifts observed at radio frequencies to refine orbits determined from optical data;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.imo.net/imc2014/imc2014-gural.pdf"&gt;Pete Gural&lt;/a&gt; (Washington) reminded us that we would benefit from meteor surveys that exploit small telescopes rather than wide-angle camera lenses. In fact it is surprising that no such surveys seem to exist at present.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="visual-data-remains-important"&gt;
+&lt;h2&gt;Visual data remains important&lt;/h2&gt;
+&lt;p&gt;Although much of the recent increase in meteor data is
+brought about by sensitive video cameras,
+several speakers reminded us of the importance of visual (ie. human eye)
+and radio observations. Visual observations, in particular,
+remain the best method for estimating the fluxes of large meteoroids.
+This is because (i) video cameras do not nearly offer the same
+sensitivity and field of view as the human eye,
+and (ii) visual observations are well-understood and calibrated.
+Likewise, radio observations remain necessary to constrain the
+flux of smaller meteoroids.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-need-for-open-data"&gt;
+&lt;h2&gt;The need for open data&lt;/h2&gt;
+&lt;p&gt;I ended my summary with a rant on the importance
+of public data sets and open software.
+I believe that everyone in the field would benefit from having more
+groups share their data, for three key reasons:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;open data sets raise the profile of meteor science as a necessary branch of astrophysics -- the availability of high-quality databases may attract more researchers and resources into the field;&lt;/li&gt;
+&lt;li&gt;there is ample evidence in other branches of astronomy that authors of open data sets receive more citations and the recognition of funding panels, because their openness allow other researchers to make serendipitous discoveries;&lt;/li&gt;
+&lt;li&gt;last but not least, science needs to be reproducible!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;During my rant I observed that, at present,
+many amateur meteor scientists share the data despite
+using their private money,
+whereas most professionals use public money yet keep the data private.
+A number of participants told me afterwards that this situation
+is quite shocking, really, and I share that feeling.
+I imagine that many professionals believe that keeping data private gives
+them an advantage over competing scientists,
+but what it really does -- in my humble opinion --
+is that it makes the entire field of meteor science look
+like an outdated branch of astronomy
+that does not require researchers to analyse large contemporary data sets.
+Put differently, I asserted that the entire field is likely losing out
+on funding and scientific progress &lt;em&gt;to other fields&lt;/em&gt;,
+because professional data sets aren't being shared.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-need-for-open-software"&gt;
+&lt;h2&gt;The need for open software&lt;/h2&gt;
+&lt;p&gt;I then went on to make similar observations about the habit
+of meteor scientists to keep their software closed.
+It seems rather obvious that open, re-usable software components
+can revolutionise the efficiency and accuracy of our observing projects.
+I pointed out that:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;as an author of open source software, you are free to choose your own license, eg. you can demand citations or require co-authorship if that is what you are worried about;&lt;/li&gt;
+&lt;li&gt;authors of open source software do not &lt;em&gt;have&lt;/em&gt; to offer support, it is perfectly fine to put source code on line with a disclaimer that you do not have the time to implement new features or fix bugs;&lt;/li&gt;
+&lt;li&gt;we &lt;em&gt;all&lt;/em&gt; have dirty code, so stop worrying about the quality -- if a piece of software is good enough to produce your scientific results, then by definition it is also good enough to share;&lt;/li&gt;
+&lt;li&gt;papers on data analysis methods can never capture all the details, whereas source code can.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I then went on to explain how other branches of astrophysics are being made
+a lot easier by the existence of open source libraries such as &lt;a class="reference external" href="http://www.astropy.org"&gt;AstroPy&lt;/a&gt;,
+which counts nearly 100 contributors and exploits modern tools
+such as &lt;a class="reference external" href="https://github.com"&gt;GitHub&lt;/a&gt;
+to enable such mass collaboration. I asserted that we would all
+benefit from having a similar, more vibrant, meteor software community.&lt;/p&gt;
+&lt;p&gt;Although it is unlikely that many meteor workers will make a sudden shift
+towards open data and software,
+I do think that my brief and friendly rant
+may have inspired some. Let's wait and see!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="next-year"&gt;
+&lt;h2&gt;Next year&lt;/h2&gt;
+&lt;p&gt;We are very grateful to the &lt;a class="reference external" href="http://ceres.geol.u-psud.fr/fripon/"&gt;FRIPON group&lt;/a&gt; for hosting
+this year's fabulous meeting.
+Next year's International Meteor Conference will take place in Austria
+on 27-30 August 2015. I can warmly recommend all those interested in meteors,
+at all levels, to join the fun!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="meteors"></category></entry><entry><title>219 million stars: our new atlas of the visible Milky Way</title><link href="http://www.geert.io/iphas-dr2-catalogue.html" rel="alternate"></link><published>2014-09-16T06:00:00-07:00</published><updated>2014-09-16T06:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-09-16:/iphas-dr2-catalogue.html</id><summary type="html">&lt;p&gt;Over the past decade, my colleagues and I have been working
+very hard on a mission to create the most detailed atlas
+ever made of the visible part of our home galaxy, the Milky Way.
+The result of this labour is a brand new catalogue detailing
+the properties of no …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the past decade, my colleagues and I have been working
+very hard on a mission to create the most detailed atlas
+ever made of the visible part of our home galaxy, the Milky Way.
+The result of this labour is a brand new catalogue detailing
+the properties of no fewer than 219 million stars.
+The work was officially published &lt;a class="reference external" href="http://mnras.oxfordjournals.org/lookup/doi/10.1093/mnras/stu1651"&gt;published in the journal MNRAS&lt;/a&gt; today.
+It is also the topic of a &lt;a class="reference external" href="https://www.ras.org.uk/news-and-press/2507-219-million-stars"&gt;press release&lt;/a&gt; by the
+Royal Astronomical Society,
+which describes the project in great clarity
+and includes this beautiful excerpt of our map:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-iphas-dr2-stellar-density-map.png"&gt;&lt;img alt="" src="http://www.geert.io/images/2014-iphas-dr2-stellar-density-map-borderless-small.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;A density map of part of the Milky Way disk, mined directly from the new catalogue by one of our talented PhD students, Hywel Farnhill. Click on the image for a very large version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lots-and-lots-of-telescope-images"&gt;
+&lt;h2&gt;Lots and lots of telescope images&lt;/h2&gt;
+&lt;p&gt;Our new map is the result of a collaboration
+between an international team of astronomers,
+named the &lt;a class="reference external" href="http://www.iphas.org"&gt;INT Photometric H-Alpha Survey&lt;/a&gt; (IPHAS),
+which is led by my manager Prof Janet Drew
+at the University of Hertfordshire.
+The project uses the 2.5-meter mirror of the Isaac Newton Telescope (INT)
+on the island of La Palma to take very detailed images
+of the Milky Way across a &lt;a class="reference external" href="http://www.geert.io/iphas-footprint.html"&gt;band of 180-by-10 degrees&lt;/a&gt; in the sky.
+This allows us to capture all the stars brighter than 20th magnitude
+-- a million times fainter than can be seen with the human eye.&lt;/p&gt;
+&lt;p&gt;The sensitive detectors of the telescope's camera
+provided us with more than 250 000 detailed CCD frames of the Milky Way so far,
+at a resolution of 8 megapixel each.
+It took more than 350 nights at the telescope,
+spread over a period of 10 years, to obtain these data.
+Interestingly, all these nights were obtained in so-called &lt;em&gt;open access time&lt;/em&gt;,
+which means that we had to compete with other projects
+every semester to gain access to the telescope.&lt;/p&gt;
+&lt;p&gt;To offer a sense of the insane amount of data collected
+by the survey, I uploaded a 6-hour movie to YouTube which showcases
+&lt;em&gt;all the images&lt;/em&gt; obtained so far.
+The movie proceeds at a rate of one colour mosaic per second:&lt;/p&gt;
+&lt;iframe width="640" height="480" src="//www.youtube.com/embed/P1eIptEsmS4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;Each image in the movie corresponds
+to a single pointing of the telescope towards the Milky Way.
+The frames shown are colour mosaics composed of the four CCD detectors
+that make up the telescope's L-shaped camera.
+Each detector consists of 2048-by-4100 pixels,
+covering 0.2-by-0.4 degrees on the sky,
+but the resolution of the movie was of course reduced significantly
+prior to upload.
+The colour mosaics are composed of exposures obtained separately
+using an H-alpha filter (red channel), an r-band filter (green channel),
+and an i-band filter (blue channel).&lt;/p&gt;
+&lt;p&gt;The movie is an uncut version of all the data,
+i.e. it includes images obtained under poor conditions.
+For example, clouds in the atmosphere can occasionally be seen to cause
+very bright and colourful frames with very few stars.
+Such poor data have of course been flagged and re-observed
+as part of the quality control procedures which we developed.
+As well as carrying out several automated checks,
+yours truly carefully inspected all the images by eye.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="from-images-to-catalogue"&gt;
+&lt;h2&gt;From images to catalogue&lt;/h2&gt;
+&lt;p&gt;Astronomers rarely use images directly to study the
+contents of our Galaxy.
+Instead, they prefer to use &lt;em&gt;catalogues&lt;/em&gt; in which
+the properties of all the stars
+are listed in a convenient tabular format.
+Constructing such a catalogue is a &lt;em&gt;big data&lt;/em&gt; job,
+because it required the thousands of stars in each of the
+250 000 CCD frames to be painstakingly measured.
+Needless to say, this required a high-performance supercomputer
+along with purpose-built software
+(for which the &lt;a class="reference external" href="http://casu.ast.cam.ac.uk/"&gt;Cambridge Astronomical Survey Unit&lt;/a&gt;
+deserves much of the credit).
+Fortunately, I was able to benefit from
+my experience in computing to carry out the task:
+I obtained an MSc in computer science prior
+to getting a PhD in astrophysics.
+That is, I am a bit of an intruder in astronomy,
+though the official term for that is &lt;em&gt;data scientist&lt;/em&gt; these days!&lt;/p&gt;
+&lt;p&gt;The catalogue, which is 50 GB in size after data compression,
+is available for download &lt;a class="reference external" href="http://www.iphas.org/dr2"&gt;from our project website&lt;/a&gt;
+and can be queried online through the &lt;a class="reference external" href="http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=II%2F321"&gt;Vizier data portal&lt;/a&gt;.
+In the near future, I will be blogging examples showing
+how the data may be accessed and exploited.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="why-we-are-excited"&gt;
+&lt;h2&gt;Why we are excited&lt;/h2&gt;
+&lt;p&gt;A unique feature of our survey is the use of a narrow-band filter which
+captures the brightest hydrogen emission line, H-alpha.
+If we detect a strong signature of H-alpha emission towards a star,
+it tells us that the object is likely to be very young or very old,
+because that is when stars tend to be surrounded by diffuse ionized gas.
+Such pre- or post-main-sequence stars represent relatively short-lived phases
+of stellar evolution and are hence hard to find amongst the vast majority of
+&amp;quot;normal&amp;quot; main sequence stars that populate our mature Galaxy.
+Our catalogue will allow far more of these young and old objects to
+be discovered, which is necessary to develop and
+test models for these crucial stages in the life of a star.
+We have already identified several hundreds of previously unknown objects
+in the catalogue which are likely to be very young or old,and have started studying them in more detail.&lt;/p&gt;
+&lt;p&gt;We are also excited to share this new data with the rest of the world
+for another reason:
+whenever large data sets have been released in the past,
+astronomers have always come up with new and creative methods
+to use it in ways which were not originally envisaged by the authors.
+We hope this will be no different for our catalogue,
+and look forward to new and serendipitous discoveries being made.
+In particular, IPHAS data complements the work of ESA's recently launched Gaia mission, that will start releasing data from 2016.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="astronomy"></category></entry><entry><title>Asteroid (22275) Barentsen</title><link href="http://www.geert.io/asteroid-22275-barentsen.html" rel="alternate"></link><published>2014-07-22T17:00:00-07:00</published><updated>2014-07-22T17:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-07-22:/asteroid-22275-barentsen.html</id><summary type="html">&lt;p&gt;I've had the pleasure to learn that a small
+piece of the solar system is now named after me:
+asteroid 22275 has been formally named &amp;quot;Barentsen&amp;quot;
+by the International Astronomical Union.
+The announcement was published recently in &lt;a class="reference external" href="http://www.minorplanetcenter.net/iau/ECS/MPCArchive/2014/MPC_20140712.pdf"&gt;Minor Planet Circular 88763&lt;/a&gt;,
+which named several dozen asteroids
+after scientists who have …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've had the pleasure to learn that a small
+piece of the solar system is now named after me:
+asteroid 22275 has been formally named &amp;quot;Barentsen&amp;quot;
+by the International Astronomical Union.
+The announcement was published recently in &lt;a class="reference external" href="http://www.minorplanetcenter.net/iau/ECS/MPCArchive/2014/MPC_20140712.pdf"&gt;Minor Planet Circular 88763&lt;/a&gt;,
+which named several dozen asteroids
+after scientists who have contributed to the field.
+This is the little paragraph they wrote about me:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-mpc88763.png"&gt;&lt;img alt="Minor Planet Circular 88763." src="http://www.geert.io/images/2014-mpc88763.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Asteroid Barentsen travels around the Sun every 3.7 years.
+It is located in the inner asteroid belt between Mars and Jupiter.
+It is unlikely to hit the Earth any time soon,
+which is fortunate because the object has a diameter
+of roughly 5 to 10 km:
+similar in size to the asteroid
+which is thought to have killed the dinosaurs.&lt;/p&gt;
+&lt;p&gt;The physical parameters of the object can be found
+&lt;a class="reference external" href="http://www.minorplanetcenter.net/db_search/show_object?object_id=barentsen"&gt;on this page at the Minor Planet Center&lt;/a&gt;.
+I used the information to create
+the animation below, which visualises the trajectory
+of the asteroid through our solar system:&lt;/p&gt;
+&lt;iframe width="853" height="480" src="//www.youtube.com/embed/HDweQPIN0UA?vq=hd1080" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;The asteroid is reasonably bright: ranging between 16th and 19th magnitude.
+Various sky surveys have imaged the object since its discovery in 1982.
+My favourite set of images were taken
+by the &lt;a class="reference external" href="http://data.sdss3.org/fields/runCamcolField?run=5323&amp;amp;camcol=2&amp;amp;field=48"&gt;Sloan Digital Sky Survey&lt;/a&gt; on 12 May 2005,
+at a time when the asteroid happened to pass
+just next to a pretty spiral galaxy:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-asteroid-barentsen-sdss.gif"&gt;&lt;img alt="Asteroid (22275) in the Sloan Digital Sky Survey." src="http://www.geert.io/images/2014-asteroid-barentsen-sdss.gif" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Asteroid (22275) Barentsen as observed on 12 May 2005.
+The animation consists of two images taken 150 seconds apart.
+The asteroid is the bright moving dot located near the centre.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The object is likely to be an &lt;a class="reference external" href="http://en.wikipedia.org/wiki/S-type_asteroid"&gt;S-type asteroid&lt;/a&gt;,
+which means that it consists mostly of iron- and magnesium-silicates.
+The &lt;a class="reference external" href="http://adsabs.harvard.edu/abs/2008MPBu...35..126S"&gt;lightcurve of the object&lt;/a&gt; reveals
+that it takes 40 hours to spin around its axis,
+so the inhabitants get to sleep 20 hours a night
+(albeit depending on the orientation of the axis).
+That sounds like a great place to live,
+I can't wait to move! :-)&lt;/p&gt;
+</content><category term="astronomy"></category></entry><entry><title>Martian Nyan Cat</title><link href="http://www.geert.io/martian-nyan-cat.html" rel="alternate"></link><published>2014-06-25T16:00:00-07:00</published><updated>2014-06-25T16:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-06-25:/martian-nyan-cat.html</id><summary type="html">&lt;p&gt;Today I participated in the &lt;a class="reference external" href="http://www.nam2014.org/science-programme/hack-day/"&gt;Hack Day&lt;/a&gt; at the
+&lt;a class="reference external" href="http://www.nam2014.org"&gt;UK National Astronomy Meeting&lt;/a&gt; in Portsmouth.
+Apart from working on a few silly side projects,
+my colleagues &lt;a class="reference external" href="http://www.askanastronomer.co.uk/jharwood"&gt;Jeremy Harwood&lt;/a&gt;, &lt;a class="reference external" href="http://star.herts.ac.uk/~lsmith/"&gt;Leigh Smith&lt;/a&gt;, and I
+decided to produce a video which might well change the face
+of astronomy outreach and visualisation forever.&lt;/p&gt;
+&lt;p&gt;The …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I participated in the &lt;a class="reference external" href="http://www.nam2014.org/science-programme/hack-day/"&gt;Hack Day&lt;/a&gt; at the
+&lt;a class="reference external" href="http://www.nam2014.org"&gt;UK National Astronomy Meeting&lt;/a&gt; in Portsmouth.
+Apart from working on a few silly side projects,
+my colleagues &lt;a class="reference external" href="http://www.askanastronomer.co.uk/jharwood"&gt;Jeremy Harwood&lt;/a&gt;, &lt;a class="reference external" href="http://star.herts.ac.uk/~lsmith/"&gt;Leigh Smith&lt;/a&gt;, and I
+decided to produce a video which might well change the face
+of astronomy outreach and visualisation forever.&lt;/p&gt;
+&lt;p&gt;The video below demonstrates how astronomers may be able
+to use &lt;a class="reference external" href="https://www.youtube.com/watch?v=QH2-TGUlwu4"&gt;Nyan Cat&lt;/a&gt;,
+a popular figure beloved by younger generations across the world,
+as a novel tool for astronomy outreach and education:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/KPc6_hReseI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;In the video, our rainbow-tailed friend can be seen to fly
+across the surface of Mars. The background images shown are actual
+observations obtained by the HRSC camera on board the
+European Space Agency's &lt;a class="reference external" href="http://www.esa.int/Our_Activities/Space_Science/Mars_Express"&gt;Mars Express&lt;/a&gt; spacecraft.&lt;/p&gt;
+&lt;p&gt;The data was obtained from ESA's &lt;a class="reference external" href="http://www.rssd.esa.int/index.php?project=PSA"&gt;Planetary Science Archive&lt;/a&gt;.
+At the frame rate shown,
+our feline friend would take nearly 2 days to fly across all the
+observations.
+We hope to produce such a full-length video
+in the near future.
+We believe that a video containing ALL the data,
+with or without an airborne mammal on top,
+can serve as a genuinely useful visualisation
+to give people a feel for the wealth and nature of data
+in an archive. Looking at data is always useful!&lt;/p&gt;
+&lt;p&gt;The code used to prepare the video is on &lt;a class="reference external" href="https://github.com/barentsen/martian-nyan-cat"&gt;GitHub&lt;/a&gt;.
+Please don't tell the instrument PI we did this.&lt;/p&gt;
+</content><category term="astronomy"></category></entry><entry><title>Mapping the Milky Way's dust</title><link href="http://www.geert.io/iphas-3d-extinction-map.html" rel="alternate"></link><published>2014-06-03T08:00:00-07:00</published><updated>2014-06-03T08:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-06-03:/iphas-3d-extinction-map.html</id><summary type="html">&lt;p&gt;In recent months, my colleagues and I have been working very hard
+on compiling a massive catalogue
+which details the position and brightness of roughly 200 million stars
+located in the northern part of the Milky Way.
+The catalogue is based on a huge set of images
+which we collected …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In recent months, my colleagues and I have been working very hard
+on compiling a massive catalogue
+which details the position and brightness of roughly 200 million stars
+located in the northern part of the Milky Way.
+The catalogue is based on a huge set of images
+which we collected as part of the &lt;a class="reference external" href="http://www.iphas.org"&gt;IPHAS survey&lt;/a&gt;
+using the &lt;a class="reference external" href="http://www.ing.iac.es/Astronomy/telescopes/int/"&gt;Isaac Newton Telescope&lt;/a&gt; in La Palma.
+The data set contains 1.6 TB of compressed FITS images!&lt;/p&gt;
+&lt;p&gt;Although the paper which describes the new catalogue
+is still under peer-review,
+our first major result already &lt;a class="reference external" href="http://arxiv.org/abs/1406.0009"&gt;appeared on the arXiv today&lt;/a&gt;.
+Using a probabilistic graphical model,
+Stuart Sale (Oxford) and collaborators used the catalogue
+to estimate the distance and extinction
+towards 38 million stars.
+The result of this effort is a 3D map of extinction (i.e. interstellar dust)
+across the Northern Galactic Plane:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-iphas-extinction-map.gif"&gt;&lt;img alt="3D extinction map." src="http://www.geert.io/images/2014-iphas-extinction-map.gif" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;A 3D extinction map of the Northern Galactic Plane based on IPHAS data. (Animation: S. Sale)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The new IPHAS catalogue is particularly well suited for this task,
+because it provides narrow-band H-alpha photometry
+for stars down to ~20th magnitude.
+When this data is combined with the IPHAS broad-band magnitudes (Sloan r/i),
+it yields a good proxy for the intrinsic brightness and colour of each star
+(which in turn is key to obtaining distance and extinction estimates).
+In effect, H-alpha photometry is the cheapest-imaginable
+method to carry out a spectroscopic survey.&lt;/p&gt;
+&lt;p&gt;To learn more about the project, visit the fancy new website
+for the &lt;a class="reference external" href="http://www.iphas.org"&gt;IPHAS survey&lt;/a&gt; which I created recently.&lt;/p&gt;
+</content><category term="astronomy"></category></entry><entry><title>Map: where can you see the 2014 Camelopardalids from?</title><link href="http://www.geert.io/camelopardalids-2014-visibility-map.html" rel="alternate"></link><published>2014-05-20T12:00:00-07:00</published><updated>2014-05-20T12:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-05-20:/camelopardalids-2014-visibility-map.html</id><summary type="html">&lt;p&gt;There &lt;em&gt;might&lt;/em&gt; be an outburst of the &lt;a class="reference external" href="http://www.imo.net/node/1555"&gt;Camelopardalids meteor shower&lt;/a&gt; on May 24th near 7h Universal Time (UT). If you live in North or Middle America, you will want to keep an eye on the sky in the night from Friday on Saturday for one or two hours surrounding 7h …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There &lt;em&gt;might&lt;/em&gt; be an outburst of the &lt;a class="reference external" href="http://www.imo.net/node/1555"&gt;Camelopardalids meteor shower&lt;/a&gt; on May 24th near 7h Universal Time (UT). If you live in North or Middle America, you will want to keep an eye on the sky in the night from Friday on Saturday for one or two hours surrounding 7h UT, which is 3am local time in New York, or midnight in San Francisco.&lt;/p&gt;
+&lt;p&gt;Green and yellow areas in the map below indicate the locations on Earth where the event will be visible from, if it happens.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2014-camelopardalids-visibility.png"&gt;&lt;img alt="Camelopardalids visibility map." src="http://www.geert.io/images/2014-camelopardalids-visibility.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Areas in the world where the Camelopardalids outburst might be visible. Note that this map includes the necessary correction for zenithal attraction.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="meteors"></category></entry><entry><title>Annual variations in the jet stream (video)</title><link href="http://www.geert.io/variations-in-the-jet-stream.html" rel="alternate"></link><published>2014-02-17T10:00:00-08:00</published><updated>2014-02-17T10:00:00-08:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-02-17:/variations-in-the-jet-stream.html</id><summary type="html">&lt;p&gt;The weather has been unusual in the past two months:
+extremely wet and windy in the UK
+whilst very cold and snowy in the United States.
+Such large-scale weather patterns are naturally linked
+to variations in the global atmospheric circulation.
+It is hence no surprise that there is much talk …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The weather has been unusual in the past two months:
+extremely wet and windy in the UK
+whilst very cold and snowy in the United States.
+Such large-scale weather patterns are naturally linked
+to variations in the global atmospheric circulation.
+It is hence no surprise that there is much talk in the media
+about the so-called &lt;em&gt;jet stream&lt;/em&gt;,
+which refers to the very strong winds
+which circle our planet at an altitude of about 10 km.&lt;/p&gt;
+&lt;p&gt;To get a better idea of what the jet stream looks like and how it varies,
+I hacked together a tiny Python module called &lt;a class="reference external" href="https://www.github.com/barentsen/jetstream.py"&gt;jetstream.py&lt;/a&gt; to visualise
+the average position and strength of the jet stream in different months
+based on global circulation models.
+The result looks like this:&lt;/p&gt;
+&lt;iframe width="640" height="360" src="http://www.youtube.com/embed/OGbDihkcvEE?feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;The data shown originates from the &lt;a class="reference external" href="http://www.ecmwf.int/research/era/do/get/era-interim"&gt;ECMWF ERA re-analysis model&lt;/a&gt;,
+which does not offer data for January or February 2014 yet
+(hence the video focuses on December).
+I cannot offer an interesting interpretation about this animation
+at present, I was just curious to look at the data.&lt;/p&gt;
+&lt;p&gt;If you spot something interesting in this video, please leave a comment below.&lt;/p&gt;
+</content><category term="climate"></category></entry><entry><title>Social Comet ISON Statistics</title><link href="http://www.geert.io/social-comet-ison.html" rel="alternate"></link><published>2013-12-02T10:00:00-08:00</published><updated>2013-12-02T10:00:00-08:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-12-02:/social-comet-ison.html</id><summary type="html">&lt;p&gt;Users of Twitter posted up to 12,000 messages per hour during Comet ISON's &lt;a class="reference external" href="http://www.bbc.co.uk/news/science-environment-25143861"&gt;perilous encounter&lt;/a&gt; with the Sun last Friday. Events like this provide us with an opportunity to understand the demographics of the audience exposed to astronomy through social media.&lt;/p&gt;
+&lt;p&gt;Using the &lt;a class="reference external" href="https://dev.twitter.com/docs/api/1.1/post/statuses/filter"&gt;public API&lt;/a&gt; provided by Twitter, I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Users of Twitter posted up to 12,000 messages per hour during Comet ISON's &lt;a class="reference external" href="http://www.bbc.co.uk/news/science-environment-25143861"&gt;perilous encounter&lt;/a&gt; with the Sun last Friday. Events like this provide us with an opportunity to understand the demographics of the audience exposed to astronomy through social media.&lt;/p&gt;
+&lt;p&gt;Using the &lt;a class="reference external" href="https://dev.twitter.com/docs/api/1.1/post/statuses/filter"&gt;public API&lt;/a&gt; provided by Twitter, I was able to automatically collect the thousands of comet-related messages by querying for tweets containing the keyword &amp;quot;ISON&amp;quot;.
+During the ten-day period between November 20 and 30, I harvested 331,952 tweets about the doomed little planet in this way. The messages originated from no less than 141,899 unique Twitter accounts.&lt;/p&gt;
+&lt;p&gt;The social activity peaked in the evening of November 29th, which is when the ill-fated object was prematurely pronounced dead on Twitter by several high-profile accounts such as NASA, ESA and BBC. At that time, the activity jumped to 3 tweets per second (tps) for several hours, which is impressive if you consider that Michael Jackson's death in 2009 peaked only 150 times higher &lt;a class="reference external" href="http://www.telegraph.co.uk/technology/twitter/9945505/Twitter-in-numbers.html"&gt;at 456 tps&lt;/a&gt;. Reports of ISON's death were greatly exaggerated however, whilst Jackson's wasn't.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2013-ison-twitter-annotated.png"&gt;&lt;img alt="Tweets per hour during Comet ISON's close encounter with the Sun." src="http://www.geert.io/images/2013-ison-twitter-annotated.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Number of tweets containing the word ISON during the Comet's close encounter with the Sun. All times are in Universal Time (UT).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A reason for collecting social data like these is that they may inform us about the demographics of the audience reached through social media. Indeed, in addition to the messages themselves, the Twitter API offers indirect information on the user's profile such as their location, their followers and past tweets.
+Understanding the audience is useful because astronomical outreach is often hampered by the problem of &lt;cite&gt;preaching to the converted&lt;/cite&gt;, that is, many activities tend to reach people who were already astronomy fans at the outset. It is possible that outreach carried out through social media is less affected by this problem, but it is not obvious and could be tested. (Also see my &lt;a class="reference external" href="http://www.geert.io/comet-panstarrs-attracts-2x-more-men-than-women.html"&gt;previous post&lt;/a&gt; on using YouTube analytics for this purpose.)&lt;/p&gt;
+&lt;p&gt;Having said all that, I haven't actually tried to infer any demographics from these data at present. Doing so would involve building a probabilistic model to infer e.g. gender and ethnicity (from the profile picture) and affinity with science (from past tweets). This requires algorithms which are more likely to be found in the marketing departments of large corporations rather than on code-sharing sites like GitHub, and hence the task is not trivial.&lt;/p&gt;
+&lt;p&gt;Anyone interested in this data science challenge?&lt;/p&gt;
+</content><category term="comets"></category></entry><entry><title>Outburst of the Daytime Craterids meteor shower</title><link href="http://www.geert.io/daytime-craterids-2013.html" rel="alternate"></link><published>2013-08-28T16:00:00-07:00</published><updated>2013-08-28T16:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-08-28:/daytime-craterids-2013.html</id><summary type="html">&lt;p&gt;I am currently attending the &lt;a class="reference external" href="http://www.astro.amu.edu.pl/Meteoroids2013/"&gt;Meteoroids 2013&lt;/a&gt; conference in Poland. At the meeting, Prof. &lt;a class="reference external" href="http://meteor.uwo.ca/~pbrown/"&gt;Peter Brown&lt;/a&gt; has just alerted us to the fact that the Daytime Craterids meteor shower has unexpectedly been detected by the Canadian Meteor Orbit Radar (CMOR) this morning. You can see the radar detection for yourself …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am currently attending the &lt;a class="reference external" href="http://www.astro.amu.edu.pl/Meteoroids2013/"&gt;Meteoroids 2013&lt;/a&gt; conference in Poland. At the meeting, Prof. &lt;a class="reference external" href="http://meteor.uwo.ca/~pbrown/"&gt;Peter Brown&lt;/a&gt; has just alerted us to the fact that the Daytime Craterids meteor shower has unexpectedly been detected by the Canadian Meteor Orbit Radar (CMOR) this morning. You can see the radar detection for yourself at &lt;a class="reference external" href="http://fireballs.ndc.nasa.gov/cmor-radiants/"&gt;http://fireballs.ndc.nasa.gov/cmor-radiants/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2013-craterids-cmor.png"&gt;&lt;img alt="Daytime Craterids detected by CMOR." src="http://www.geert.io/images/2013-craterids-cmor.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Daytime Craterids (DCR) detected by the Canadian Meteor Orbit Radar (CMOR).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This same shower has previously shown outbursts in 2003 and 2008, but not in other years. A recent paper by Wiegert et al. discussing these surprise appearances is available at &lt;a class="reference external" href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2011.18432.x/pdf"&gt;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2011.18432.x/pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If the previous outbursts are anything to go by, the shower might last for several days and still increase in activity. Whether this might produce visible meteors at optical wavelengths is essentially unknown, but &lt;strong&gt;amateur astronomers at Southern latitudes are strongly encouraged to keep an eye out for earth-grazing meteors near sunset.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The animation below indicates areas on the Earth where the radiant of the Daytime Craterids will be above the horizon, and the Sun below the horizon, over the next day. As the name suggests, the radiant of the Daytime Craterids is located near the Sun and is hence very difficult to observe.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2013-craterids-visibility.gif"&gt;&lt;img alt="Daytime Craterids visibility." src="http://www.geert.io/images/2013-craterids-visibility.gif" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Areas in the world where earth-grazing Daytime Craterids &lt;strong&gt;might&lt;/strong&gt; be visible.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="meteors"></category></entry><entry><title>Perseids 2013 global observing results</title><link href="http://www.geert.io/perseids2013.html" rel="alternate"></link><published>2013-08-13T12:00:00-07:00</published><updated>2013-08-13T12:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-08-13:/perseids2013.html</id><summary type="html">&lt;p&gt;The annual Perseids meteor shower peaked last night between 16h00m and 18h00m UT (12th August 2013). The peak ZHR was about 147 ± 17 meteors/hour.&lt;/p&gt;
+&lt;p&gt;The graphs below show the visual activity graphs, which I have been generating for the &lt;a class="reference external" href="http://www.imo.net"&gt;International Meteor Organization&lt;/a&gt; during &lt;a class="reference external" href="http://www.imo.net/zhr"&gt;each major meteor shower since 2006 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The annual Perseids meteor shower peaked last night between 16h00m and 18h00m UT (12th August 2013). The peak ZHR was about 147 ± 17 meteors/hour.&lt;/p&gt;
+&lt;p&gt;The graphs below show the visual activity graphs, which I have been generating for the &lt;a class="reference external" href="http://www.imo.net"&gt;International Meteor Organization&lt;/a&gt; during &lt;a class="reference external" href="http://www.imo.net/zhr"&gt;each major meteor shower since 2006&lt;/a&gt;. The graphs are based on the naked-eye observing reports received from hundreds of citizen scientists around the world.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.imo.net/live/perseids2013"&gt;&lt;img alt="Perseids 2013 visual data" src="http://www.imo.net/live/perseids2013/out/per2013overview.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;ZHR activity graph for the 2013 Perseids based on visual data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.imo.net/live/perseids2013/#peak"&gt;&lt;img alt="Science cat is ready for GAIA" src="http://www.imo.net/live/perseids2013/out/per2013peak.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Detailed activity graph of the period around 12 August 2013.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="meteors"></category></entry><entry><title>Getting ready for Gaia</title><link href="http://www.geert.io/getting-ready-for-gaia.html" rel="alternate"></link><published>2013-08-06T08:00:00-07:00</published><updated>2013-08-06T08:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-08-06:/getting-ready-for-gaia.html</id><summary type="html">&lt;p class="first last"&gt;Gaia is one of the most ambitious space missions of the decade. Twitter has a lot of talk about it this morning, after &lt;a class="reference external" href="https://twitter.com/davidwhogg/status/364286883682983936"&gt;one pundit&lt;/a&gt; started using the hashtag &lt;a class="reference external" href="https://twitter.com/search?q=%23NRFG"&gt;#NRFG&lt;/a&gt; - &amp;quot;Not Ready For Gaia&amp;quot;.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Gaia is one of the most ambitious space missions of the decade. Twitter has a lot of talk about it this morning, after &lt;a class="reference external" href="https://twitter.com/davidwhogg/status/364286883682983936"&gt;one pundit&lt;/a&gt; started using the hashtag &lt;a class="reference external" href="https://twitter.com/search?q=%23NRFG"&gt;#NRFG&lt;/a&gt; - &amp;quot;Not Ready For Gaia&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I thought I would contribute to the debate by introducing a few friends who are #RFG. First of all, lets remind ourselves that one does not simply prepare:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/gaia-one-does-not-simply-prepare.png"&gt;&lt;img alt="Science cat is ready for GAIA" src="http://www.geert.io/images/gaia-one-does-not-simply-prepare.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;... and when people tried it in the past, they got into trouble:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/gaia-inquisition.png"&gt;&lt;img alt="Science cat is ready for GAIA" src="http://www.geert.io/images/gaia-inquisition.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;... some people are optimistic:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/gaia-greg-is-ready.png"&gt;&lt;img alt="Science cat is ready for GAIA" src="http://www.geert.io/images/gaia-greg-is-ready.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;... but there is only one clear winner:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/gaia-cat-is-ready.png"&gt;&lt;img alt="Science cat is ready for GAIA" src="http://www.geert.io/images/gaia-cat-is-ready.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;All memes shall be submitted to the official &lt;a class="reference external" href="http://astromemes.tumblr.com/"&gt;Astromemes archive&lt;/a&gt; for peer review.&lt;/p&gt;
+</content><category term="astronomy"></category></entry><entry><title>Does rainfall affect food prices in Kenya?</title><link href="http://www.geert.io/rainfall-vs-food-prices.html" rel="alternate"></link><published>2013-08-05T22:00:00-07:00</published><updated>2013-08-05T22:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-08-05:/rainfall-vs-food-prices.html</id><summary type="html">&lt;p&gt;Last week I had the pleasure to attend the first &amp;quot;London DataDive&amp;quot; organised by &lt;a class="reference external" href="http://datakind.org.uk"&gt;DataKind UK&lt;/a&gt;; a non-profit organisation which aims to bring data scientists and social organisations together. The noble idea behind DataKind is that charities and public bodies often sit on a pile of data which might be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last week I had the pleasure to attend the first &amp;quot;London DataDive&amp;quot; organised by &lt;a class="reference external" href="http://datakind.org.uk"&gt;DataKind UK&lt;/a&gt;; a non-profit organisation which aims to bring data scientists and social organisations together. The noble idea behind DataKind is that charities and public bodies often sit on a pile of data which might be valuable to our society, but that those organisations often lack the tools and resources needed to put these data to use.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;DataDive&amp;quot; which I attended took place in the Mozilla Space in Central London and had 80 volunteer data scientists show up. On the first night, four charities were given the opportunity to present their problems and data sets, followed by a small socialising party. On the next day, a solid 12 hours of non-stop software hacking and data analysis ensued. Both &lt;a class="reference external" href="http://www.theguardian.com/news/datablog/2013/jul/30/corporate-analysts-collaborate-charities-tackle-social-issues"&gt;The Guardian&lt;/a&gt;  and &lt;a class="reference external" href="http://www.economist.com/blogs/graphicdetail/2013/07/data-do-gooders"&gt;The Economist&lt;/a&gt; posted a summary of the charities and the hack day projects involved.&lt;/p&gt;
+&lt;p&gt;I decided to join the Oxfam camp, which had brought along a nice data set on global food prices. These prices have seen sharp and sudden increases in recent years. Nobody is exactly sure why the price of food has become so high and volatile, but the impact on the well-being and security of people across poor and rural areas is significant.&lt;/p&gt;
+&lt;p&gt;With a small team I decided to focus on the question:
+&lt;cite&gt;&amp;quot;Does rainfall affect food prices in Kenya?&amp;quot;&lt;/cite&gt;&lt;/p&gt;
+&lt;script async class="speakerdeck-embed" data-id="c406cad0d9b40130d4495229b8396628" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;&lt;p&gt;Although the amount of data exploration that can happen in a single day is limited, we found evidence for three surprising conclusions:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;rainfall in Kenya has decreased by up to 50% since 1980, probably due to deforestation;&lt;/li&gt;
+&lt;li&gt;the price of Maize in Kenya has risen by up to 400% since 2000;&lt;/li&gt;
+&lt;li&gt;there was anomalous rainfall in Kenya in 1998, 2009 and 2010.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Interestingly, the anomalous rainfall in 2009 and 2010 coincided with spikes in the price of Maize, which is a crop known to be sensitive to changing rain patterns. However, many factors are involved, and hence a more comprehensive study of rainfall and food prices across the world would be needed before a causal relationship can be established. Such a relationship, if any, is probably small compared to the global market trends.&lt;/p&gt;
+&lt;p&gt;The results of our data exploration are summarised in the slides above. The plots were made with Python and PostgreSQL. I learned loads and hope to meet the awesome data analysts from Oxfam again in the future!&lt;/p&gt;
+</content><category term="data"></category></entry><entry><title>Watch out for the 2013 gamma-Delphinids</title><link href="http://www.geert.io/gamma-delphinids-2013.html" rel="alternate"></link><published>2013-06-07T17:48:00-07:00</published><updated>2013-06-07T17:48:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-06-07:/gamma-delphinids-2013.html</id><summary type="html">&lt;p class="first last"&gt;On 11 June 1930, three meteor observers in Maryland (USA) &lt;a class="reference external" href="http://www.amsmeteors.org/2013/06/a-repeat-of-the-gamma-delphinid-outburst/"&gt;witnessed a flurry of shooting stars&lt;/a&gt; originating from the constellation of Delphinus. The mysterious meteor shower, called the gamma-Delphinids, lasted less than 30 minutes. The shower had never been seen before, and it has never returned since... until this year?&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;&lt;em&gt;Update (11 June 2013)&lt;/em&gt;: it looks like &lt;a class="reference external" href="http://lists.meteorobs.org/pipermail/meteorobs/2013-June/thread.html"&gt;no outburst was seen&lt;/a&gt;. The
+meteor shower will remain elusive for another while...&lt;/p&gt;
+&lt;p&gt;On 11 June 1930, three meteor observers in Maryland (USA) &lt;a class="reference external" href="http://www.amsmeteors.org/2013/06/a-repeat-of-the-gamma-delphinid-outburst/"&gt;witnessed a
+flurry of shooting stars&lt;/a&gt; originating from the constellation of
+Delphinus. The mysterious meteor shower, called the gamma-Delphinids,
+lasted less than 30 minutes. The shower had never been seen before, and
+it has never returned since... until this year?&lt;/p&gt;
+&lt;p&gt;The gamma-Delphinids are one of &lt;a class="reference external" href="http://adsabs.harvard.edu/abs/1995A%26A...295..206J"&gt;a dozen rare meteor showers&lt;/a&gt; for which
+only anecdotal evidence exists. Such showers are thought to be caused by
+the dust trails of unknown &lt;strong&gt;long-period comets&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Meteoroid streams from long-period comets are thought to be very narrow.
+In fact the dust trails are so compact that our planet only encounters
+them when the gravitational pull from Jupiter and Saturn steers the
+stream exactly into Earth's path. In contrast, famous meteor showers
+such as the Perseids and the Leonids originate from known &lt;em&gt;short-period
+comets&lt;/em&gt;. Such streams are more widely dispersed due to their frequent
+exposure to planetary perturbations and solar radiation in the Solar
+System, and hence Earth encounters those short-period streams every
+year.&lt;/p&gt;
+&lt;p&gt;On 11 June 2013 near 8:30 UT, Earth &lt;a class="reference external" href="http://adsabs.harvard.edu/abs/2003Icar..162..443L"&gt;is predicted&lt;/a&gt; to encounter the
+gamma-Delphinids for the first time since 1930. By measuring the time of
+the outburst, or its absence, we'll be able to establish whether the
+shower is real, and learn about its origin. This is important because it
+teaches us about a large, Earth-crossing comet which we haven't
+discovered yet.&lt;/p&gt;
+&lt;p&gt;Observers in North and South America are best placed to observe the
+event. Green and yellow areas in the map below indicate parts of the
+world where the sky will be dark, and the radiant above the horizon,
+near the predicted time of the meteor shower.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="map to buried treasure" src="http://barentsen.files.wordpress.com/2013/06/delphinids2013.png" /&gt;
+&lt;p class="caption"&gt;Gamma-Delphinids visibility map. Green and yellow areas in the map indicate parts of the world where the sky will be dark, and the radiant above the horizon.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="meteors"></category></entry><entry><title>Is Java freezing your system? Tune the garbage collector!</title><link href="http://www.geert.io/java-freezing-due-to-garbage-collector.html" rel="alternate"></link><published>2013-03-26T00:00:00-07:00</published><updated>2013-03-26T00:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-03-26:/java-freezing-due-to-garbage-collector.html</id><summary type="html">&lt;p&gt;I regularly open huge images and tables (&amp;gt;1 GB) in interactive Java-based
+(astronomy) software such as &lt;a class="reference external" href="http://aladin.u-strasbg.fr/"&gt;Aladin&lt;/a&gt; and &lt;a class="reference external" href="http://www.star.bris.ac.uk/~mbt/topcat/"&gt;TopCat&lt;/a&gt;. Because of &lt;a class="reference external" href="http://www.ibm.com/developerworks/java/library/j-nativememory-linux/"&gt;the
+way memory allocation works in Java&lt;/a&gt;, the area where objects reside in
+memory (called the heap) needs to be reserved up front using Java's
+&lt;code&gt;-Xmx&lt;/code&gt; switch. Hence I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I regularly open huge images and tables (&amp;gt;1 GB) in interactive Java-based
+(astronomy) software such as &lt;a class="reference external" href="http://aladin.u-strasbg.fr/"&gt;Aladin&lt;/a&gt; and &lt;a class="reference external" href="http://www.star.bris.ac.uk/~mbt/topcat/"&gt;TopCat&lt;/a&gt;. Because of &lt;a class="reference external" href="http://www.ibm.com/developerworks/java/library/j-nativememory-linux/"&gt;the
+way memory allocation works in Java&lt;/a&gt;, the area where objects reside in
+memory (called the heap) needs to be reserved up front using Java's
+&lt;code&gt;-Xmx&lt;/code&gt; switch. Hence I tend to run memory-intensive applications
+using:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;java -Xmx4000m
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you don't use this flag you will get an &lt;code&gt;OutOfMemoryError&lt;/code&gt;
+exception as soon as your application exceeds the default heap size,
+which is typically set at only a few hundred megabytes.&lt;/p&gt;
+&lt;p&gt;However, I frequently found myself faced with a horrible performance
+experience when using a large heap. Java applications would freeze my
+entire (64-bit) Linux system for anywhere between 2 and 60 seconds. This
+happened regardless of the JVM used (I tried Oracle Java 1.7, Sun Java
+1.6, GCJ 1.5). I verified that my system had plenty of memory available
+and was not swapping, hence a lack of memory was not to blame. A
+profiler revealed that these freezes were instead caused by an insane
+number of interrupts which ate 100% of all CPU cores in so-called
+&amp;quot;system&amp;quot; cycles.&lt;/p&gt;
+&lt;p&gt;The cause of these system freezes is Java's garbage collection
+mechanism; a built-in automated memory management system which reclaims
+memory occupied by objects that are no longer in use. Whilst this
+feature makes programming in Java a bit easier than, say, C++; it comes
+with the disadvantage that garbage collection in a large heap can
+&lt;a class="reference external" href="http://stackoverflow.com/questions/214362/java-very-large-heap-sizes"&gt;introduce a considerable overhead&lt;/a&gt;. Some collection algorithms deal
+less effectively with large heaps than others, and unfortunately in my
+case, Java appeared to be using a collection strategy which paused the
+application during the whole duration of each garbage collection run,
+hence resulting in frequent freezing.&lt;/p&gt;
+&lt;p&gt;The trick to avoid these freezes is to tell Java to use a collection
+strategy which runs concurrently to the application, hence avoiding
+lengthy interruptions of the entire process. This can be achieved using
+the &lt;code&gt;-XX:+UseConcMarkSweepGC&lt;/code&gt; flag, i.e.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;java -Xmx4000m -XX:+UseConcMarkSweepGC
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are in fact &lt;a class="reference external" href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#cms"&gt;many more&lt;/a&gt; tuning parameters which can influence the
+behaviour of the garbage collection, but &lt;code&gt;UseConcMarkSweepGC&lt;/code&gt; looks like
+the first obvious thing to try if you are experiencing annoying freezes
+in memory-intensive Java applications.&lt;/p&gt;
+</content><category term="computing"></category><category term="Aladin"></category><category term="Java"></category><category term="Topcat"></category></entry><entry><title>Comet PanSTARRS attracts 2x more men than women?</title><link href="http://www.geert.io/comet-panstarrs-attracts-2x-more-men-than-women.html" rel="alternate"></link><published>2013-03-20T18:41:00-07:00</published><updated>2013-03-20T18:41:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-03-20:/comet-panstarrs-attracts-2x-more-men-than-women.html</id><summary type="html">&lt;p&gt;Two weeks ago, I &lt;a class="reference external" href="http://www.geert.io/map-when-can-you-see-comet-panstarrs.html"&gt;posted an animation&lt;/a&gt; on YouTube showing where Comet
+PanSTARRS would be visible. The video attracted more than 15 000 hits,
+and &lt;strong&gt;although this is not a proper statistical analysis&lt;/strong&gt;, I would like
+to draw attention to an interesting result in the demographic analytics
+provided by YouTube …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Two weeks ago, I &lt;a class="reference external" href="http://www.geert.io/map-when-can-you-see-comet-panstarrs.html"&gt;posted an animation&lt;/a&gt; on YouTube showing where Comet
+PanSTARRS would be visible. The video attracted more than 15 000 hits,
+and &lt;strong&gt;although this is not a proper statistical analysis&lt;/strong&gt;, I would like
+to draw attention to an interesting result in the demographic analytics
+provided by YouTube: 75% of the viewers were male.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/20130320-panstarrs-youtube.png"&gt;&lt;img alt="statistics" src="http://www.geert.io/images/20130320-panstarrs-youtube.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;YouTube demographic statistics for the animation of comet PanSTARRS's visibility.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Although the numbers are only based on the ~20% of viewers which were
+logged into a YouTube account while watching, statistics like these may
+reveal broad trends about the public interest in astronomy. If we were
+to assume that all people interested in astronomy are equally likely to
+have watched the animation, and if in addition we assume that these
+people are all equally likely to have a YouTube account regardless of
+their age/gender, then one might conclude that (middle-aged) men are
+twice more likely to seek for comet information than women.
+Interestingly, this is broadly consistent with the (unfortunate) trend
+of large male majorities in astronomy clubs and &lt;a class="reference external" href="http://womeninastronomy.blogspot.co.uk/2012/11/where-are-women-astronomy-professors.html"&gt;university
+departments&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is no doubt that the above assumptions are wrong to some degree,
+and that the YouTube statistics are hence biased. It is not clear how
+severe the bias is however. I tried Googling for demographic statistics
+of YouTube users in general, but could not find consistent information.
+(Does anyone know a reliable source? Are 75% of YouTube users male
+anyway?!)&lt;/p&gt;
+&lt;p&gt;If the biases can be accounted for using a proper statistical analysis,
+then the analytics offered by science-themed YouTube videos would
+provide a way to measure the public interest as a function of age,
+gender and topic.&lt;/p&gt;
+</content><category term="comets"></category></entry><entry><title>Map: when can you see comet PanSTARRS?</title><link href="http://www.geert.io/map-when-can-you-see-comet-panstarrs.html" rel="alternate"></link><published>2013-03-05T13:33:00-08:00</published><updated>2013-03-05T13:33:00-08:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-03-05:/map-when-can-you-see-comet-panstarrs.html</id><summary type="html">&lt;p&gt;Comet &lt;a class="reference external" href="http://cometography.com/lcomets/2011l4.html"&gt;C/2011 L4 (PANSTARRS)&lt;/a&gt; has brightened dramatically over the past
+week and is &lt;a class="reference external" href="http://spaceweather.com/gallery/index.php?title=comet"&gt;now visible with the naked eye&lt;/a&gt; from the Southern
+Hemisphere. Pan-STARRS is moving north rapidly and will become visible
+across Europe, North America and Asia &lt;strong&gt;from Thursday 7 March onward&lt;/strong&gt;.
+The comet is expected to reach …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Comet &lt;a class="reference external" href="http://cometography.com/lcomets/2011l4.html"&gt;C/2011 L4 (PANSTARRS)&lt;/a&gt; has brightened dramatically over the past
+week and is &lt;a class="reference external" href="http://spaceweather.com/gallery/index.php?title=comet"&gt;now visible with the naked eye&lt;/a&gt; from the Southern
+Hemisphere. Pan-STARRS is moving north rapidly and will become visible
+across Europe, North America and Asia &lt;strong&gt;from Thursday 7 March onward&lt;/strong&gt;.
+The comet is expected to reach its peak brightness around the time of
+its closest approach to the Sun (called the perihelion) on Sunday 10
+March. It may or may not lose brightness quickly afterwards, so you want
+to catch this comet as soon as possible!&lt;/p&gt;
+&lt;p&gt;I plotted the visibility of Pan-STARRS in the &lt;a class="reference external" href="http://www.youtube.com/watch?v=WhXyegVTikc"&gt;video&lt;/a&gt; below.
+Green/yellow areas in the animation indicate parts of the world where
+the comet will be above the horizon (and the Sun at least six degrees
+below the horizon). The movie shows that Pan-STARRS is only visible
+shortly after sunset, when it is located &lt;a class="reference external" href="http://www.skyandtelescope.com/observing/highlights/Update-on-Comet-PanSTARRS-187930541.html"&gt;low above the Western
+horizon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The movie was created using my Python &lt;a class="reference external" href="https://github.com/barentsen/visibility-maps"&gt;visibility-maps module&lt;/a&gt;. The
+original frames that went into making the movie &lt;a class="reference external" href="http://star.herts.ac.uk/~gb/blog/C2011L4/"&gt;can be found here&lt;/a&gt; and
+may be used freely.&lt;/p&gt;
+&lt;iframe width="640" height="475" src="http://www.youtube.com/embed/WhXyegVTikc?feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="comets"></category><category term="C/2011 L4"></category><category term="Comet"></category><category term="Pan-STARRS"></category></entry><entry><title>How frequently do large meteoroids hit us?</title><link href="http://www.geert.io/the-frequency-of-large-meteoroids.html" rel="alternate"></link><published>2013-02-15T12:34:00-08:00</published><updated>2013-02-15T12:34:00-08:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-02-15:/the-frequency-of-large-meteoroids.html</id><summary type="html">&lt;p class="first last"&gt;The internet &lt;a class="reference external" href="https://twitter.com/search?q=%23RussianMeteor"&gt;is buzzing&lt;/a&gt; about a fireball which caused a powerful &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Sonic_boom"&gt;sonic boom&lt;/a&gt; over Chelyabinsk in&amp;nbsp;Russia,&amp;nbsp;&lt;a class="reference external" href="http://www.bbc.co.uk/news/world-europe-21468116"&gt;injuring hundreds&lt;/a&gt;. A question asked by many is: &lt;em&gt;how common is such event&lt;/em&gt;?&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;The internet &lt;a class="reference external" href="https://twitter.com/search?q=%23RussianMeteor"&gt;is buzzing&lt;/a&gt; about a fireball which caused a powerful
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Sonic_boom"&gt;sonic boom&lt;/a&gt; over Chelyabinsk in&amp;nbsp;Russia,&amp;nbsp;&lt;a class="reference external" href="http://www.bbc.co.uk/news/world-europe-21468116"&gt;injuring hundreds&lt;/a&gt;. A
+question asked by many is: &lt;em&gt;how common is such event&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;Answer: more common than you might think!&lt;/p&gt;
+&lt;p&gt;The population of Solar System bodies which cross Earth's orbit range
+from mm-sized dust (producing meteors) to km-sized asteroids (producing
+mass extinctions). The frequency of such objects is constrained by
+meteor observations on one hand (there are ~1000 visible meteors per
+second across the planet), and asteroid surveys on the other hand (a
+10km body will hit us every ~100 million years).&lt;/p&gt;
+&lt;p&gt;The object that struck Russia falls somewhere in the middle of this
+range. We know that a meteoroid needs to be larger than 1 meter in
+diameter to penetrate deep enough into the atmosphere to cause a
+significant airburst (though velocity, entry angle and composition are
+important too). At the same time, the scale of destruction is a lot
+smaller than the famous &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Tunguska_event"&gt;Tunguska event in 1908&lt;/a&gt;, which is thought to
+have been caused by a 50m-sized body. Hence a first guess for the size
+of the Russian meteoroid would be &amp;quot;between 1 and 20 meter&amp;quot;.&lt;/p&gt;
+&lt;p&gt;We don't know the frequency of asteroids in this size range very well.
+There are not enough meteor observing cameras to detect these rare
+events, yet the objects are too small and faint to be detected by
+telescopes ahead of their impact (apart from &lt;a class="reference external" href="http://www.nature.com/nature/journal/v458/n7237/full/nature07920.html"&gt;one notable exception&lt;/a&gt; in
+2008).&lt;/p&gt;
+&lt;p&gt;There is an industry that is very successful in detecting these impacts
+however; military space surveillance. The US Defense and Energy
+departments operate satellites to detect the heat signatures from
+nuclear weapons and rocket launches from space. In 2002, a team led by
+Professor&amp;nbsp;&lt;a class="reference external" href="http://meteor.uwo.ca/~pbrown/"&gt;Peter Brown&lt;/a&gt; obtained access to classified data on 300
+large fireballs detected between 1994 and 2002 by the military. The
+authors combined this information with ground-based observations to
+estimate the relationship between the size of meteoroids and their
+impact frequency:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/brown2002_fig4.png"&gt;&lt;img alt="The relationship between the size of meteoroids and their impact frequency." src="http://www.geert.io/images/brown2002_fig4.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;The relationship between the size of meteoroids and their impact frequency. Credit: &lt;a class="reference external" href="http://www.nature.com/nature/journal/v420/n6913/full/nature01238.html"&gt;Brown et al. 2002&lt;/a&gt; (Figure 4).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The work by Brown et al. may approximately be summarized as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;a 10cm-body hits us every few minutes;&lt;/li&gt;
+&lt;li&gt;a 1m-body every few months;&lt;/li&gt;
+&lt;li&gt;a 10m-body every few years to decades;&lt;/li&gt;
+&lt;li&gt;a 100m-body every few millenia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hence, a fireball like the one in Russia is likely to occur somewhere
+between every few years and every few decades, but the uncertainty is
+large. Shifting the trend slightly upwards or downwards can change the
+estimated frequencies by a factor of several, and so we should be
+careful to pin down any numbers with large confidence.&lt;/p&gt;
+&lt;p&gt;Whilst the Russian meteor appears to be the largest &lt;em&gt;recorded&lt;/em&gt; event for
+a century, it would be imprudent to infer that it hence only occurs once
+a century. It is difficult to rely on historical records of the past,
+because less than 20% of the surface of our planet is inhabited, and so
+many impacts might have gone unnoticed. In fact there is some evidence
+for a possible &lt;a class="reference external" href="http://adsabs.harvard.edu/abs/1995Obs...115..250B"&gt;'Brazilian Tunguska' on 13 August 1930&lt;/a&gt; and a &lt;a class="reference external" href="http://adsabs.harvard.edu/abs/1995JIMO...23..207S"&gt;'Guyana
+Tunguska' on 11 December 1935&lt;/a&gt;, but events like these may have been
+undocumented or forgotten.&lt;/p&gt;
+&lt;p&gt;Moreover, there are reasons to believe that the impact frequencies are
+not constant, but may be elevated during certain periods (see &lt;a class="reference external" href="http://star.herts.ac.uk/~gb/pub/2012_imc.pdf"&gt;my recent
+talk&lt;/a&gt; on this topic). Unfortunately, the US military announced in 2009
+that they &lt;a class="reference external" href="http://www.space.com/6829-military-hush-incoming-space-rocks-classified.html"&gt;will no longer share fireball observations with scientists&lt;/a&gt;,
+so we'll have to come up with other ways to pin down the exact danger
+coming from small asteroids!&lt;/p&gt;
+</content><category term="meteors"></category><category term="Chelyabinsk"></category><category term="Fireball"></category></entry><entry><title>From where can you spot 2012 DA14?</title><link href="http://www.geert.io/2012-da14.html" rel="alternate"></link><published>2013-02-12T21:30:00-08:00</published><updated>2013-02-12T21:30:00-08:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2013-02-12:/2012-da14.html</id><summary type="html">&lt;p&gt;On Friday 15 February, a 50-meter asteroid named &lt;a class="reference external" href="http://neo.jpl.nasa.gov/news/news174.html"&gt;2012 DA14&lt;/a&gt; will
+approach Earth to within a distance of &lt;a class="reference external" href="http://remanzacco.blogspot.it/2013/02/close-approach-of-asteroid-2012-da14.html"&gt;just ~28 000 km&lt;/a&gt;. The internet
+&lt;a class="reference external" href="https://twitter.com/search?q=%232012DA14"&gt;is buzzing&lt;/a&gt; about this near-miss because the object is expected to
+become brighter than 9th magnitude for approximately 3 hours
+(18h00-21h30 UTC), peaking at a brightness …&lt;/p&gt;</summary><content type="html">&lt;p&gt;On Friday 15 February, a 50-meter asteroid named &lt;a class="reference external" href="http://neo.jpl.nasa.gov/news/news174.html"&gt;2012 DA14&lt;/a&gt; will
+approach Earth to within a distance of &lt;a class="reference external" href="http://remanzacco.blogspot.it/2013/02/close-approach-of-asteroid-2012-da14.html"&gt;just ~28 000 km&lt;/a&gt;. The internet
+&lt;a class="reference external" href="https://twitter.com/search?q=%232012DA14"&gt;is buzzing&lt;/a&gt; about this near-miss because the object is expected to
+become brighter than 9th magnitude for approximately 3 hours
+(18h00-21h30 UTC), peaking at a brightness of 7th magnitude near 19h45
+UTC. Although this is just below the brightness limit of the unaided
+eye, it is within reach of good binoculars.&lt;/p&gt;
+&lt;p&gt;While there are &lt;a class="reference external" href="http://www.popastro.com/news/newsdetail.php?id_nw=165"&gt;plenty&lt;/a&gt; of &lt;a class="reference external" href="http://www.heavens-above.com/2012da14.aspx"&gt;maps&lt;/a&gt; online showing &lt;em&gt;where in the sky&lt;/em&gt;
+you may find 2012 DA14, I could not find any maps showing &lt;em&gt;where on
+Earth&lt;/em&gt; you have to be to get a good view. So I made a few maps myself.
+Green areas in the animated gif below indicate parts of the world where
+the asteroid will be above (and the Sun below) the horizon as it sweeps
+past. The maps were generated using a Python class which I pushed to my
+GitHub &lt;a class="reference external" href="https://github.com/barentsen/visibility-maps"&gt;repository&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/2012da141.gif"&gt;&lt;img alt="Visibility of 2012 DA14." src="http://www.geert.io/images/2012da141.gif" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Visibility of 2012 DA14. Green areas indicate parts of the world where the asteroid will be above (and the Sun below) the horizon as it sweeps past.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="asteroids"></category></entry><entry><title>How do you organise $HOME?</title><link href="http://www.geert.io/how-to-organise-your-home-directory.html" rel="alternate"></link><published>2012-10-30T22:15:00-07:00</published><updated>2012-10-30T22:15:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2012-10-30:/how-to-organise-your-home-directory.html</id><summary type="html">&lt;p&gt;Home directories often turn into spooky graveyards of random files,
+temporary directories and &lt;a class="reference external" href="http://4.bp.blogspot.com/-K3vWjzXLsKM/TzDGLdv6GqI/AAAAAAAAB_M/EJUwGAP3sME/s1600/funny-pictures-cat-threatens-to-edit-your-face.jpg"&gt;images of lolcats&lt;/a&gt;. It takes courage to
+delete the mess, because there may be one or two important files hiding
+amongst the pr0n. As a result, many scientists have grown afraid to run
+&lt;code&gt;ls ~&lt;/code&gt; in public, fearing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Home directories often turn into spooky graveyards of random files,
+temporary directories and &lt;a class="reference external" href="http://4.bp.blogspot.com/-K3vWjzXLsKM/TzDGLdv6GqI/AAAAAAAAB_M/EJUwGAP3sME/s1600/funny-pictures-cat-threatens-to-edit-your-face.jpg"&gt;images of lolcats&lt;/a&gt;. It takes courage to
+delete the mess, because there may be one or two important files hiding
+amongst the pr0n. As a result, many scientists have grown afraid to run
+&lt;code&gt;ls ~&lt;/code&gt; in public, fearing that the output of said command will expose
+them as file-hoarding maniacs. (By the way, the fear of running &lt;code&gt;ls ~&lt;/code&gt;
+should be called &lt;em&gt;domusindexophobia&lt;/em&gt; in Latin.)&lt;/p&gt;
+&lt;p&gt;For years I have employed the popular strategy of sticking random files
+on the desktop, and whenever it becomes a mess, create a folder called
+&amp;quot;oldstuff&amp;quot; and move everything into it. The strength of this strategy is
+that it can be repeated indefinitely (oldstuff2, oldstuff3,
+oldstuff4...), the weakness is that you remain a file-hoarding,
+domusindexophobic maniac.&lt;/p&gt;
+&lt;p&gt;In the past few months I decided to adopted a more sensible strategy.
+From henceforth, my home directory shall never contain more than 7
+(non-hidden) directories:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;~/tmp&lt;/strong&gt;: all downloads and unimportant files go here; may be
+emptied without notice;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/bin&lt;/strong&gt;: locally installed software, i.e. &lt;code&gt;./configure
+--prefix=~/bin/foo&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/dev&lt;/strong&gt;: source code trees for programming projects
+(sub-directories are GitHub repositories);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/proj&lt;/strong&gt;: various non-programming projects;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/doc&lt;/strong&gt;: subdirectories for receipts, boarding passes, papers,
+books, etc.;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/lts&lt;/strong&gt;: things to archive forever (&amp;quot;Long Term Storage&amp;quot;); e.g.
+photos and science data (with README files);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/msc&lt;/strong&gt;: a last resort for things which don't fit elsewhere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I employ different backup strategies for each folder. For example, parts
+of ~/lts sit on an external network drive, while much of ~/doc sits on
+DropBox and most of ~/dev sits on GitHub.&lt;/p&gt;
+&lt;p&gt;Is this a Sensible Approach™? What does your nest look like?&lt;/p&gt;
+</content><category term="computing"></category></entry><entry><title>Footprint of the IPHAS Galactic Plane survey</title><link href="http://www.geert.io/iphas-footprint.html" rel="alternate"></link><published>2012-10-22T11:01:00-07:00</published><updated>2012-10-22T11:01:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2012-10-22:/iphas-footprint.html</id><summary type="html">&lt;p&gt;As part of my post-doc at the University of Hertfordshire, I'm helping
+to calibrate, release and exploit data obtained by the&amp;nbsp;&lt;a class="reference external" href="http://www.iphas.org"&gt;INT
+Photometric H-Alpha Survey&lt;/a&gt; (IPHAS). This is a 1800
+deg&lt;sup&gt;2&lt;/sup&gt;&amp;nbsp;optical survey of the Northern Galactic Plane, carried out
+in the narrow-band Hα and broad-band Sloan r'/i' …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As part of my post-doc at the University of Hertfordshire, I'm helping
+to calibrate, release and exploit data obtained by the&amp;nbsp;&lt;a class="reference external" href="http://www.iphas.org"&gt;INT
+Photometric H-Alpha Survey&lt;/a&gt; (IPHAS). This is a 1800
+deg&lt;sup&gt;2&lt;/sup&gt;&amp;nbsp;optical survey of the Northern Galactic Plane, carried out
+in the narrow-band Hα and broad-band Sloan r'/i' filters. I'll be
+talking more about the survey in future posts, but as a warm-up I
+produced this plot of the survey's 15270 telescope pointings:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/iphas_footprint.png"&gt;&lt;img alt="Footprint of the IPHAS survey." src="http://www.geert.io/images/iphas_footprint.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Footprint of the IPHAS survey.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Let me explain this footprint briefly. The survey uses the &lt;a class="reference external" href="http://www.ing.iac.es/Astronomy/instruments/wfc/"&gt;Wide-Field
+Camera&lt;/a&gt; (WFC) at the 2.5-meter &lt;a class="reference external" href="http://www.ing.iac.es/Astronomy/telescopes/int/"&gt;Isaac Newton Telescope&lt;/a&gt; (INT) in La
+Palma. This camera consists of four thinned 2048 × 4096 pixel CCDs
+arranged in an L shape like this:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/iphas_field1.png"&gt;&lt;img alt="Footprint of a single IPHAS (WFC) exposure." src="http://www.geert.io/images/iphas_field1.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Footprint of a single IPHAS (WFC) exposure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The four CCDs provide a combined field of view of 0.3 deg&lt;sup&gt;2&lt;/sup&gt;,
+hence the minimum&amp;nbsp;number of pointings required to cover the&amp;nbsp;1800
+deg&lt;sup&gt;2&lt;/sup&gt;&amp;nbsp;survey area is 6000. However, the survey was designed to
+provide a 5% overlap between adjacent fields to enable data quality and
+calibration checks. As a result, the footprint contains a total of 7635
+fields which partially overlap.&lt;/p&gt;
+&lt;p&gt;Furthermore, each field was paired with a so-called &lt;em&gt;offset field&lt;/em&gt; at 5
+arcmin West and South, to cover the narrow gaps between the CCD chips.
+This explains the final number of 7635 x 2 = 15 270 pointings. When
+their footprints are plotted using 30% opacity, a complicated sky
+coverage pattern emerges. Whilst the majority of the sky is covered
+twice, there are overlap areas which are covered three or four times
+(dark patches) and narrow bands between CCD chips which are covered
+only once (brighter strips):&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/iphas_local1.png"&gt;&lt;img alt="IPHAS footprints." src="http://www.geert.io/images/iphas_local1.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;IPHAS footprints plotted with 30% opacity. The darkest overlap areas are covered four times, while the the narrow bands between CCD chips are exposed only once.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A tricky question which results from this coverage pattern is:&amp;nbsp;&lt;strong&gt;how
+should the final source catalogue be generated?&lt;/strong&gt; Some objects are
+observed four times, sometimes many years apart, whilst others are only
+observed once. Should multiple exposures of a single object be averaged,
+or should only the best exposure be adopted in the source catalogue?
+Such tricky decisions have to be made for all surveys because
+&lt;em&gt;telescopes don't make catalogues&lt;/em&gt; (see &lt;a class="reference external" href="http://arxiv.org/abs/1008.0738"&gt;Hogg &amp;amp; Lang 2010&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;An obvious solution is to release both a catalogue of individual
+detections on one hand, and a catalogue of averaged source properties on
+the other hand (there has already been a fair bit of thinking and
+discussion in this direction within the IPHAS team!)&lt;/p&gt;
+&lt;p&gt;Such catalogue releases should preferably be supplemented by scriptable
+access to the calibrated pixel data, through image cut-outs, to enable
+users to re-measure properties or fit models to the &lt;em&gt;actual pixel data&lt;/em&gt;.
+Is there a standard VO protocol for this? There is the &lt;a class="reference external" href="http://www.ivoa.net/Documents/SIA/"&gt;Simple Image
+Access protocol&lt;/a&gt;, but is not quite designed for cut-outs!&lt;/p&gt;
+&lt;p&gt;How do you think surveys with a complicated sky coverage pattern should
+generate their catalogues and make data available?&lt;/p&gt;
+</content><category term="astronomy"></category><category term="IPHAS"></category></entry><entry><title>Visual &amp; video observations of the 2012 Draconids outburst</title><link href="http://www.geert.io/draconids-2012-observations.html" rel="alternate"></link><published>2012-10-10T23:17:00-07:00</published><updated>2012-10-10T23:17:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2012-10-10:/draconids-2012-observations.html</id><summary type="html">&lt;p&gt;As reported in my &lt;a class="reference external" href="http://www.geert.io/draconids-2012.html"&gt;previous post&lt;/a&gt;, the Draconids meteor shower showed
+an exceptional peak on the evening of 8 October 2012 near 17h UT. The
+peak was very pronounced in data from the &lt;a class="reference external" href="http://meteor.uwo.ca/research/radar/cmor_intro.html"&gt;Canadian Meteor Orbit Radar&lt;/a&gt;
+(CMOR), which reported rates &lt;a class="reference external" href="http://fireballs.ndc.nasa.gov/special/DRA_2012/Draconids_2012.png"&gt;up to 2300 meteors/hour&lt;/a&gt;. In fact, I am …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As reported in my &lt;a class="reference external" href="http://www.geert.io/draconids-2012.html"&gt;previous post&lt;/a&gt;, the Draconids meteor shower showed
+an exceptional peak on the evening of 8 October 2012 near 17h UT. The
+peak was very pronounced in data from the &lt;a class="reference external" href="http://meteor.uwo.ca/research/radar/cmor_intro.html"&gt;Canadian Meteor Orbit Radar&lt;/a&gt;
+(CMOR), which reported rates &lt;a class="reference external" href="http://fireballs.ndc.nasa.gov/special/DRA_2012/Draconids_2012.png"&gt;up to 2300 meteors/hour&lt;/a&gt;. In fact, I am
+told that this radar system recorded more meteor orbits that day than on
+any other day in its 13-year history.&lt;/p&gt;
+&lt;p&gt;While the peak was clearly exceptional in terms of radio observations,
+it remains unclear how many meteors could be seen with the naked eye or
+video cameras. The time of the peak mainly favoured sparsely populated
+areas of our planet, and visual observations have so far only been
+reported by amateur-astronomers&amp;nbsp;&lt;em&gt;Alexandr Maidik&lt;/em&gt; in Ukraine (&lt;a class="reference external" href="http://vmo.imo.net/imozhr/obsview/view.php?id=11095"&gt;who
+recorded 55 Draconids between 16h00-18h00 UT&lt;/a&gt;) and &lt;em&gt;Jakub Koukal&lt;/em&gt; in
+the Czech Republic (&lt;a class="reference external" href="http://vmo.imo.net/imozhr/obsview/view.php?id=11093"&gt;who recorded 60 Draconids between 17h00-19h10
+UT&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Using their data, I posted this graph of the Zenithal Hourly Rate (ZHR)
+on the website of the &lt;a class="reference external" href="http://www.imo.net"&gt;International Meteor Organization&lt;/a&gt; (IMO):&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/20121010-draconids-visual.png"&gt;&lt;img alt="Visual activity curve of the 2012 Draconids" src="http://www.geert.io/images/20121010-draconids-visual.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Visual activity curve of the 2012 Draconids.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While &lt;em&gt;Alexandr&lt;/em&gt; and &lt;em&gt;Jakub&lt;/em&gt; are both very experienced and reliable
+observers, two visual reports are never enough to construct a reliable
+activity profile. This is because different observing conditions
+introduce different systematic uncertainties in the ZHR estimates, which
+can only be corrected by averaging a large number of independent
+observations.&lt;/p&gt;
+&lt;p&gt;Moreover,&amp;nbsp;both observers suffered from either poor limiting magnitude or
+evening twilight. The period covered by &lt;em&gt;Alexandr&lt;/em&gt;&amp;nbsp;alone yields rates up
+to ZHR = 600 +/- 200 meteors per hour in the interval 16h50-17h00 UT.
+However, as soon as data from &lt;em&gt;Jakub&lt;/em&gt;&amp;nbsp;is available from 17h00 UT, rates
+drop to ZHR = 160 +/- 40.&amp;nbsp;When leaving out the data from &lt;em&gt;Alexandr&lt;/em&gt;,
+&lt;em&gt;Jakub's&lt;/em&gt;&amp;nbsp;first interval (17h00-17h10 UT) yields ZHR = 104 +/- 39.&lt;/p&gt;
+&lt;p&gt;The latter estimate of ZHR ~100 meteors/hour seems broadly consistent
+with data from the &lt;a class="reference external" href="http://www.imonet.org"&gt;IMO video network&lt;/a&gt;, which caught the end of the
+peak and reported ZHRs in the range of 30 to 60 meteors per hour in the
+interval 17h00-17h20. This is mainly based on two stations in Hungary,
+operated by amateur-astronomers &lt;em&gt;Antal Igaz&lt;/em&gt; and &lt;em&gt;Zsolt Perko&lt;/em&gt;:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/20121010-draconids-video.png"&gt;&lt;img alt="Video-based activity curve of the 2012 Draconids" src="http://www.geert.io/images/20121010-draconids-video.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Video-based activity curve of the 2012 Draconids (credit: IMO video network).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;On the basis of this visual and video data, it seems tempting to
+conclude that the outburst was dominated by small meteoroid particles
+and hence produced only a moderate outburst in the optical (ZHR &amp;lt; 200
+meteors per hour?), but more data is required to make such claim.&lt;/p&gt;
+&lt;p&gt;If anyone is aware of reports from Russia or China about this event,
+please shout. This area of science crucially depends on data provided
+by citizens.&lt;/p&gt;
+</content><category term="meteors"></category></entry><entry><title>Draconids show outburst (again!)</title><link href="http://www.geert.io/draconids-2012.html" rel="alternate"></link><published>2012-10-08T19:40:00-07:00</published><updated>2012-10-08T19:40:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2012-10-08:/draconids-2012.html</id><summary type="html">&lt;p&gt;For the &lt;a class="reference external" href="http://www.imo.net/draconids2011results"&gt;second year in a row&lt;/a&gt;, reports are emerging about a major peak
+in the activity of the Draconids meteor shower. Radar observing stations
+&lt;a class="reference external" href="http://lists.meteorobs.org/pipermail/meteorobs/2012-October/015396.html"&gt;in Canada&lt;/a&gt; and &lt;a class="reference external" href="http://barentsen.files.wordpress.com/2012/10/ask32_flux.png"&gt;in Germany&lt;/a&gt;&amp;nbsp;reported up to 1000-2000 meteors/hour
+between 16h and 18h UT on 8 October 2012. Evidence for an outburst is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;For the &lt;a class="reference external" href="http://www.imo.net/draconids2011results"&gt;second year in a row&lt;/a&gt;, reports are emerging about a major peak
+in the activity of the Draconids meteor shower. Radar observing stations
+&lt;a class="reference external" href="http://lists.meteorobs.org/pipermail/meteorobs/2012-October/015396.html"&gt;in Canada&lt;/a&gt; and &lt;a class="reference external" href="http://barentsen.files.wordpress.com/2012/10/ask32_flux.png"&gt;in Germany&lt;/a&gt;&amp;nbsp;reported up to 1000-2000 meteors/hour
+between 16h and 18h UT on 8 October 2012. Evidence for an outburst is
+also apparent in data from &lt;a class="reference external" href="http://rmob.org/pages/liveradiometeorpage.php"&gt;some forward-scatter radio
+stations&lt;/a&gt;&amp;nbsp;operated by amateur astronomers.&lt;/p&gt;
+&lt;p&gt;Radio observing systems are only sensitive to the smallest meteoroids,
+which produce very faint shooting stars. It is not yet clear how many
+meteors were bright enough to be seen with the naked eye or video
+cameras. However, independent video observers in the Czech Republic and
+Germany told me they recorded more Draconids than usual in the early
+evening hours (~10 to 40), which does indicate a significant enhancement
+(albeit no exceptional storm). Careful analysis will follow.&lt;/p&gt;
+&lt;p&gt;Note that the time of the peak did not favour most parts of Europe,
+which were still experiencing evening twilight. Observers across Asia
+were best placed to observe the event. Green and yellow areas in the map
+below indicate parts of the world where the sky was dark, and the
+radiant above the horizon, at 17h00 UT tonight:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.geert.io/images/20121008-draconids-visibility.png"&gt;&lt;img alt="visibility" src="http://www.geert.io/images/20121008-draconids-visibility.png" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Green and yellow areas in the map indicate parts of the world where the sky was dark, and the radiant above the horizon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This outburst may have been caused by the narrow trail of dust and
+debris left behind by the parent comet in 1959. Our planet&amp;nbsp;&lt;a class="reference external" href="http://feraj.narod.ru/Radiants/Predictions/21p-ids2012eng.html"&gt;had been
+predicted to encounter this specific dust trail in 2012&lt;/a&gt;&amp;nbsp;by meteor
+modeler Mikhail Maslov,&amp;nbsp;but the level of activity appears to have been
+somewhat higher than expected. This is not a first for the Draconids:
+similar surprises occured in 1985, 1998, 1999, 2005, and &lt;a class="reference external" href="http://www.imo.net/docs/ellison_1933_draconids_storm_account.txt"&gt;MAJOR storms
+were seen in 1933 and 1946&lt;/a&gt;.&lt;/p&gt;
+</content><category term="meteors"></category></entry><entry><title>Welcome!</title><link href="http://www.geert.io/welcome.html" rel="alternate"></link><published>2012-10-06T12:00:00-07:00</published><updated>2012-10-06T12:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2012-10-06:/welcome.html</id><summary type="html">&lt;p&gt;To celebrate the completion of my PhD and start of a post-doc, I've
+decided to start publishing bits and pieces of research on a blog. I'm
+hoping this will encourage me to write about results more frequently,
+hence achieving more scientific output and interaction than I would
+obtain through peer-reviewed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;To celebrate the completion of my PhD and start of a post-doc, I've
+decided to start publishing bits and pieces of research on a blog. I'm
+hoping this will encourage me to write about results more frequently,
+hence achieving more scientific output and interaction than I would
+obtain through peer-reviewed publications and conferences alone.&lt;/p&gt;
+&lt;p&gt;I am inspired by a number of existing research bloggers who I enjoy
+reading. They include &lt;a class="reference external" href="http://andrewgelman.com/"&gt;Andrew Gelman&lt;/a&gt;, &lt;a class="reference external" href="http://hoggresearch.blogspot.co.uk/"&gt;David Hogg&lt;/a&gt;, &lt;a class="reference external" href="http://sarahaskew.net/"&gt;Sarah Kendrew&lt;/a&gt;,
+&lt;a class="reference external" href="http://andyxl.wordpress.com"&gt;Andy Lawrence&lt;/a&gt;, &lt;a class="reference external" href="http://apwhelan.blogspot.co.uk/"&gt;Adrian Price-Whelan&lt;/a&gt;, &lt;a class="reference external" href="http://orbitingfrog.com/"&gt;Robert Simpson&lt;/a&gt;,
+&lt;a class="reference external" href="http://www.astrobetter.com"&gt;AstroBetter&lt;/a&gt;, &lt;a class="reference external" href="http://remanzacco.blogspot.co.uk/"&gt;Remanzacco&lt;/a&gt;, &lt;a class="reference external" href="http://blogs.zooniverse.org"&gt;Zooniverse Blogs&lt;/a&gt;, &lt;a class="reference external" href="http://www.strudel.org.uk/blog/astro/index.shtml"&gt;Stuart Lowe&lt;/a&gt;, as
+well as a a bunch of &lt;em&gt;micro-bloggers&lt;/em&gt; on Twitter, and others who I
+forget to list.&lt;/p&gt;
+&lt;p&gt;This blog has just two rules:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;I shall not apologise for the frequency of posts, or lack thereof.&lt;/li&gt;
+&lt;li&gt;I shall not apologise for breaking the first rule.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you agree to these conditions, then please do subscribe to the&amp;nbsp;feed.&lt;/p&gt;
+</content><category term="misc"></category></entry></feed>

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://www.geert.io/static/geert.css" rel="stylesheet">
+
+    <link href="http://www.geert.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Geert Barentsen Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Geert" />
+<meta name="description" content="Last week I had the pleasure to attend the first "London DataDive" organised by DataKind UK; a non-profit organisation which aims to bring data scientists and social organisations together. The noble idea behind DataKind is that charities and public bodies often sit on a pile of data which might be …" />
+<meta name="keywords" content="">
+<meta property="og:site_name" content="Geert Barentsen"/>
+<meta property="og:title" content="Does rainfall affect food prices in Kenya?"/>
+<meta property="og:description" content="Last week I had the pleasure to attend the first "London DataDive" organised by DataKind UK; a non-profit organisation which aims to bring data scientists and social organisations together. The noble idea behind DataKind is that charities and public bodies often sit on a pile of data which might be …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://www.geert.io/rainfall-vs-food-prices.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2013-08-05 22:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://www.geert.io/author/geert.html">
+<meta property="article:section" content="data"/>
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg">
+
+  <title>Geert Barentsen &ndash; Does rainfall affect food prices in Kenya?</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="/">
+        <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
+      </a>
+      <h1><a href="http://www.geert.io">Geert Barentsen</a></h1>
+
+<p>Scientist & Software Engineer</p>
+      <nav>
+        <ul class="list">
+          <li><a href="/">home</a></li>
+          <li><a href="/pages/about.html">about me</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en">publications</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/geerthub" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/barentsen" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+    <h1 id="rainfall-vs-food-prices">Does rainfall affect food prices in Kenya?</h1>
+    <p>
+          Posted on Mon 05 August 2013 in <a href="http://www.geert.io/category/data.html">data</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Last week I had the pleasure to attend the first &quot;London DataDive&quot; organised by <a class="reference external" href="http://datakind.org.uk">DataKind UK</a>; a non-profit organisation which aims to bring data scientists and social organisations together. The noble idea behind DataKind is that charities and public bodies often sit on a pile of data which might be valuable to our society, but that those organisations often lack the tools and resources needed to put these data to use.</p>
+<p>The &quot;DataDive&quot; which I attended took place in the Mozilla Space in Central London and had 80 volunteer data scientists show up. On the first night, four charities were given the opportunity to present their problems and data sets, followed by a small socialising party. On the next day, a solid 12 hours of non-stop software hacking and data analysis ensued. Both <a class="reference external" href="http://www.theguardian.com/news/datablog/2013/jul/30/corporate-analysts-collaborate-charities-tackle-social-issues">The Guardian</a>  and <a class="reference external" href="http://www.economist.com/blogs/graphicdetail/2013/07/data-do-gooders">The Economist</a> posted a summary of the charities and the hack day projects involved.</p>
+<p>I decided to join the Oxfam camp, which had brought along a nice data set on global food prices. These prices have seen sharp and sudden increases in recent years. Nobody is exactly sure why the price of food has become so high and volatile, but the impact on the well-being and security of people across poor and rural areas is significant.</p>
+<p>With a small team I decided to focus on the question:
+<cite>&quot;Does rainfall affect food prices in Kenya?&quot;</cite></p>
+<script async class="speakerdeck-embed" data-id="c406cad0d9b40130d4495229b8396628" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script><p>Although the amount of data exploration that can happen in a single day is limited, we found evidence for three surprising conclusions:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>rainfall in Kenya has decreased by up to 50% since 1980, probably due to deforestation;</li>
+<li>the price of Maize in Kenya has risen by up to 400% since 2000;</li>
+<li>there was anomalous rainfall in Kenya in 1998, 2009 and 2010.</li>
+</ol>
+</blockquote>
+<p>Interestingly, the anomalous rainfall in 2009 and 2010 coincided with spikes in the price of Maize, which is a crop known to be sensitive to changing rain patterns. However, many factors are involved, and hence a more comprehensive study of rainfall and food prices across the world would be needed before a causal relationship can be established. Such a relationship, if any, is probably small compared to the global market trends.</p>
+<p>The results of our data exploration are summarised in the slides above. The plots were made with Python and PostgreSQL. I learned loads and hope to meet the awesome data analysts from Oxfam again in the future!</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'geert';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+</article>
+
+    <footer>
+<p>&copy; Geert Barentsen 
+—
+powered by <a href="http://getpelican.com">Pelican</a>
+—
+you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> on GitHub.
+</p>    </footer>
+  </main>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69171-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Geert Barentsen ",
+  "url" : "http://www.geert.io",
+  "image": "https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

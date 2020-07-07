@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://www.geert.io/static/geert.css" rel="stylesheet">
+
+    <link href="http://www.geert.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Geert Barentsen Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Geert" />
+<meta name="description" content="Three weeks have passed since my original post, and Ebola has continued to spread exponentially since. At the present rate, the number of reported cases of Ebola appears to double every 29 days." />
+<meta name="keywords" content="">
+<meta property="og:site_name" content="Geert Barentsen"/>
+<meta property="og:title" content="The exponential spread of the Ebola virus"/>
+<meta property="og:description" content="Three weeks have passed since my original post, and Ebola has continued to spread exponentially since. At the present rate, the number of reported cases of Ebola appears to double every 29 days."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://www.geert.io/exponential-growth-of-ebola.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2014-10-15 00:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://www.geert.io/author/geert.html">
+<meta property="article:section" content="data"/>
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg">
+
+  <title>Geert Barentsen &ndash; The exponential spread of the Ebola virus</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="/">
+        <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
+      </a>
+      <h1><a href="http://www.geert.io">Geert Barentsen</a></h1>
+
+<p>Scientist & Software Engineer</p>
+      <nav>
+        <ul class="list">
+          <li><a href="/">home</a></li>
+          <li><a href="/pages/about.html">about me</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en">publications</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/geerthub" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/barentsen" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+    <h1 id="exponential-growth-of-ebola">The exponential spread of the Ebola virus</h1>
+    <p>
+          Posted on Wed 15 October 2014 in <a href="http://www.geert.io/category/data.html">data</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="section" id="update-15-oct-2014-is-the-spread-of-ebola-slowing-or-is-the-data-getting-less-accurate">
+<h2>Update 15 Oct 2014: is the spread of Ebola slowing, or is the data getting less accurate?</h2>
+<p>At the end of July, I posted a graph
+which highlighted the scary exponential growth
+in the number of Ebola infections in West Africa.
+When I updated the graph with fresh data in August and September (see below),
+the exponential rate of growth appeared to be ever increasing.
+It was a somber trend which should have set off alarm bells
+across governments much sooner than it did.</p>
+<p>I updated the graph again today.
+Interestingly, for the first time since July,
+a simple exponential curve no longer appears to
+fit the most recent data.
+Is the rate of growth slowing down?</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20141015.png"><img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20141015.png" /></a>
+</div>
+<p>It is too early to be delighted about this apparent curving
+of the trend.
+As Lynn Magoon <a class="reference external" href="#comment-1636400534">pointed out</a> in the discussion thread below,
+the World Health Organization (WHO) believes that the apparent
+decrease in the number of new cases reflects the increasing problem
+of gathering accurate data.
+In their <a class="reference external" href="http://apps.who.int/iris/bitstream/10665/136020/1/roadmapsitrep_8Oct2014_eng.pdf">Situation Report</a> of October 8th, the WHO wrote:</p>
+<blockquote>
+&quot;It should be emphasized that the reported fall in the number of new cases in Liberia over the past three weeks is unlikely to be genuine. Rather, it reflects a deterioration in the ability of overwhelmed responders to record accurate epidemiological data.&quot;</blockquote>
+<!-- We can only hope that this not the case, because the virus is now starting to spread very rapidly at over 1000 new cases a week. -->
+<p>As a result of this remark,
+the red exponential curve in the graph has been fitted
+using only the data from July 2nd through September 17th.
+Ignoring the data from the last three weeks is,
+in some sense, the simplest imaginable way to model
+the systematic underestimation of the recent numbers.
+Although a logistic function would offer a much better fit to the data,
+it would not take this extra knowledge into account.</p>
+<p>If the exponential curve in the graph is an accurate model of the reality,
+then there would be 20 000 cases by the end of October,
+48 000 by the end of November,
+and 116 000 by the end of December.
+Let's hope that this simple model proves to be wrong.</p>
+</div>
+<div class="section" id="update-17-sep-2014">
+<h2>Update (17 Sep 2014)</h2>
+<p>Seven weeks have now passed since I posted my original graph,
+and the number of <em>reported</em> Ebola cases has continued its exponential growth.
+In fact an updated version of the graph, shown below,
+suggests that the growth rate is getting even worse.
+An exponential fit to the number of cases
+from mid-July through to mid-September suggests that
+their number now doubles every 24.3 days
+(as opposed to every 29 days previously).
+This may be explained by the fact that the
+data is now more strongly dominated by the regions
+where the disease is not under control however,
+or by improved reporting procedures,
+rather than being due to a change in the nature of the epidemic.
+I hope to examine the data in more detail in the near future to understand.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140917.png"><img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140917.png" /></a>
+</div>
+<p>Again, the source of the data is <a class="reference external" href="http://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa#Timeline_of_cases_and_deaths">the Wikipedia page on the outbreak</a>,
+which is based on official information from the health ministries
+of the affected countries.</p>
+</div>
+<div class="section" id="update-21-aug-2014">
+<h2>Update (21 Aug 2014)</h2>
+<p>Three weeks have passed since I posted my original graph
+on the exponential spread of the Ebola virus,
+so I am now publishing a new version which includes more recent data.
+The updated graph shows that Ebola has continued to spread exponentially,
+with no sign of slowing down yet.
+The regression fit suggests that,
+at the present rate, the number of
+<em>reported</em> cases of Ebola doubles every 29 days (ie. log[2]/0.024 = 29):</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140821.png"><img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-update-20140821.png" /></a>
+</div>
+<p>The data is taken from <a class="reference external" href="http://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa#Timeline_of_cases_and_deaths">the Wikipedia page on the outbreak</a>
+and is based on official information from the health ministries
+of the affected countries. According to the World Health Organization however,
+these numbers &quot;<a class="reference external" href="http://www.bbc.co.uk/news/world-africa-28798542">vastly underestimate the magnitude of the outbreak</a>&quot;.
+That is scary!</p>
+</div>
+<div class="section" id="original-post-30-jul-2014">
+<h2>Original post (30 Jul 2014)</h2>
+<p>I made a quick plot this morning
+which attempts to make a point
+about the nature of exponential growth.
+Let me stress that I am of course not an epidemiologist,
+all I know is how to fit an exponential curve when I see one.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-exponential-growth-of-ebola-cases.png"><img alt="" src="http://www.geert.io/images/2014-exponential-growth-of-ebola-cases.png" /></a>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'geert';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+</article>
+
+    <footer>
+<p>&copy; Geert Barentsen 
+—
+powered by <a href="http://getpelican.com">Pelican</a>
+—
+you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> on GitHub.
+</p>    </footer>
+  </main>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69171-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Geert Barentsen ",
+  "url" : "http://www.geert.io",
+  "image": "https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

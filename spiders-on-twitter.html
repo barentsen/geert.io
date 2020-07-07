@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://www.geert.io/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://www.geert.io/static/geert.css" rel="stylesheet">
+
+    <link href="http://www.geert.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Geert Barentsen Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Geert" />
+<meta name="description" content="It has been a mild autumn in the UK, which has led researchers to predict that we may see more spiders than usual this year. The theory goes that mild weather causes more insects to be around, which in turn implies that there is more prey for our eight-legged friends …" />
+<meta name="keywords" content="">
+<meta property="og:site_name" content="Geert Barentsen"/>
+<meta property="og:title" content="Science using Twitter: when do people see spiders?"/>
+<meta property="og:description" content="It has been a mild autumn in the UK, which has led researchers to predict that we may see more spiders than usual this year. The theory goes that mild weather causes more insects to be around, which in turn implies that there is more prey for our eight-legged friends …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://www.geert.io/spiders-on-twitter.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2014-09-30 07:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://www.geert.io/author/geert.html">
+<meta property="article:section" content="data"/>
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg">
+
+  <title>Geert Barentsen &ndash; Science using Twitter: when do people see spiders?</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="/">
+        <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
+      </a>
+      <h1><a href="http://www.geert.io">Geert Barentsen</a></h1>
+
+<p>Scientist & Software Engineer</p>
+      <nav>
+        <ul class="list">
+          <li><a href="/">home</a></li>
+          <li><a href="/pages/about.html">about me</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oj_-lW4AAAAJ&hl=en">publications</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/barentsen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/geerthub" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/barentsen" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+    <h1 id="spiders-on-twitter">Science using Twitter: when do people see spiders?</h1>
+    <p>
+          Posted on Tue 30 September 2014 in <a href="http://www.geert.io/category/data.html">data</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>It has been a mild autumn in the UK,
+which has <a class="reference external" href="http://www.bbc.co.uk/news/uk-england-somerset-29283020">led researchers to predict</a>
+that we may see more spiders than usual this year.
+The theory goes that mild weather causes more insects to be around,
+which in turn implies that there is more prey for our eight-legged friends
+to feast on.</p>
+<p>Judging from my own Facebook and Twitter timelines,
+I certainly have the <em>impression</em> that this prediction is accurate.
+In recent weeks, a significant number of my friends
+have been posting stories about arachnids,
+but is this pattern true in general?
+We can find out!
+An interesting consequence of the digitisation
+of our social lives
+is that we now have the ability to turn such anecdotal evidence
+into <em>statistical samples</em>
+(some might even call this <em>data science</em>),
+and I have been exploring this idea.</p>
+<div class="section" id="spider-sightings-on-twitter">
+<h2>Spider sightings on Twitter</h2>
+<p>Over the past two years, I have been using the <a class="reference external" href="https://dev.twitter.com/streaming/reference/post/statuses/filter">Twitter API</a>
+to count the number of messages
+on the social network site that contained the word &quot;spider&quot;
+in several languages.
+I also obtained the meta data for each of these tweets,
+allowing me to determine the geographic region
+of each message based on the user's time zone.</p>
+<p>The graph below shows the number of tweets
+originating from Britain
+that contained the word &quot;spider&quot;.
+There have been more than 1 million of such tweets
+between January 2012 and now, posted by 446&nbsp;000 unique users.
+Interestingly, the data confirm a significant seasonal variation:</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-per-day.png"><img alt="" src="http://www.geert.io/images/2014-spider-tweets-per-day.png" /></a>
+<p class="caption">Number of tweets per day in Britain that contained the word &quot;spider&quot;.
+Retweets, replies, and tweets about Spider-Man have been excluded.</p>
+</div>
+<p>The seasonal pattern is interesting because the number of tweets
+can be considered to be a proxy
+for the amount of big spiders that are running around British homes.
+This is of course based on the assumption that people are more likely
+to use the word &quot;spider&quot; when they have just seen one,
+and although some noise exists,
+you can easily check for yourself that it is a reasonable assumption
+by <a class="reference external" href="https://twitter.com/search?q=spider">searching for &quot;spider&quot; on Twitter</a>.
+Here is an example:</p>
+<blockquote class="twitter-tweet" lang="en"><p>THERE WAS A BIG ASS SPIDER ON MY BED SO I JUMPED UP ONTO MY DRESSER IM GONNA DIE . IM TERRIFIED OF SPIDERS DAMN YOU SPIDER FUCK</p>&mdash; Sheℓby ∞  (@Shelbae_x3) <a href="https://twitter.com/Shelbae_x3/status/513900722178772992">September 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Of course not all tweets provide similar clear-cut evidence of a spider
+sighting.
+Roughly 30% of the tweets relate to the Spider-Man movies,
+but at the end of this post I will explain how
+such noise has been excluded from the statistics.</p>
+</div>
+<div class="section" id="the-correlation-with-temperature">
+<h2>The correlation with temperature</h2>
+<p>The data above suggest that spider sightings ramp up in spring,
+are most common in late summer and early autumn,
+and become rare in winter.
+Although it is too early to judge whether 2014 is an exceptional year,
+we may already infer that British people are roughly 5 to 10 times more likely
+to tweet about spiders in September than in January.</p>
+<p>This seasonal pattern is often explained in the media
+by a combination of three reasons:</p>
+<ol class="arabic simple">
+<li>it is thought that some spider species head indoors once it gets cold and wet outside;</li>
+<li>autumn is the breeding season, which is when male spiders are known to start running around like obsessed maniacs in search for a female partner;</li>
+<li>autumn is also the time of the year when central heating systems are being turned on, which produces strong temperature variations that are thought to give house spiders <a class="reference external" href="http://www.theguardian.com/commentisfree/2014/sep/23/horny-male-spiders-scare-stories">a hormonal flush that makes them extra horny</a>.</li>
+</ol>
+<p>Because the weather appears to be a likely factor,
+I decided to add the <a class="reference external" href="http://www.metoffice.gov.uk/hadobs/hadcet/">mean Central England Temperature</a>
+to the graph.
+The result is a fascinating correlation:</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-correlate-with-temperature.png"><img alt="" src="http://www.geert.io/images/2014-spider-tweets-correlate-with-temperature.png" /></a>
+<p class="caption">Number of British spider tweets per day (top), shown against the mean temperature in Central England obtained from the UK Met Office (bottom).</p>
+</div>
+<p>At this point I must stress that
+<em>correlation does not imply causation</em>.
+Although temperature is very likely to be a part of the story,
+the true reason for spotting more spiders in the autumn
+is likely to be a complicated mix of factors
+which include daylight times, rainfall, central heating, instincts, human behaviour, and so on.
+I am not troubled by any competence on this topic at all,
+so please post a comment below if you can elucidate the pattern for me.</p>
+<p>The graph does point at some interesting events
+which warrant further investigation.
+For example, there appears to be an exceptional peak in
+<em>both</em> the spider activity and the temperature in May 2012.
+Indeed many will remember that month as being exceptionally
+warm across the UK.
+Did the unusual weather cause spiders to wake up early
+and leave their cosy winter webs,
+or was it the humans who woke up and ventured into nature?
+I do not know the answer to this question at present,
+but it is likely that the <em>content</em> of the tweets from that period
+may provide clues.
+I hope to analyse them in the future.</p>
+</div>
+<div class="section" id="what-about-a-different-climate">
+<h2>What about a different climate?</h2>
+<p>If the spider tweets are a genuine proxy for the behaviour of spiders,
+and if the temperature is indeed a key factor,
+then we may expect to see different patterns in different climates.
+To test this idea, I compared the average distribution of spider tweets
+per month between Britain and Australia.
+The result is once again fascinating:</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://www.geert.io/images/2014-spider-tweets-peak-in-september.png"><img alt="" src="http://www.geert.io/images/2014-spider-tweets-peak-in-september.png" /></a>
+<p class="caption">Distribution of spider tweets as a function of the month for British and
+Australian users of Twitter. Based on averaged data between 2012 and 2014.</p>
+</div>
+<p>The graph shows that British users appear to talk about spiders
+most often in September, whilst Australians do so in January.
+The seasonal spider pattern is less pronounced down under,
+which may be explained by the fact that there is less of a contrast
+between summer and winter temperatures in Australia.
+It is also possible that Australians are somewhat less likely to tweet
+about spiders because they are more used to them
+(or because they are more likely to be killed before they can tweet).</p>
+</div>
+<div class="section" id="noise-and-future-improvements">
+<h2>Noise and future improvements</h2>
+<p>In future work, I hope to exploit the content
+of the tweets using language and image analysis methods.
+The inclusion of text analysis would be useful
+because there is a fair amount of <em>social noise</em>
+when it comes to the use of the word &quot;spider&quot;.
+To create the graphs shown above,
+I decided to apply a simple noise filter as follows:</p>
+<ul class="simple">
+<li>retweets and replies were excluded to reduce the impact of media stories and celebrities;</li>
+<li>tweets about Spider-Man were ignored by excluding tweets containing the word &quot;man&quot; (amounting to 30% of the data set);</li>
+<li>tweets about the viral <a class="reference external" href="https://www.youtube.com/watch?v=YoB8t0B4jx4">Mutant Giant Spider Dog</a> video on YouTube were ignored by excluding tweets containing the word &quot;mutant&quot; (1% of the data set).</li>
+</ul>
+<p>Moreover, I decided to exclude a few specific days
+which were dominated by tweets about celebrities.
+I removed the data for:</p>
+<ul class="simple">
+<li>24 Apr 2013: because a member of One Direction <a class="reference external" href="http://www.onedirection.net/daily-1d-tweet-round-up-24th-april-2013/">instagrammed a spider</a>;</li>
+<li>13 Nov 2012: because a politician <a class="reference external" href="http://www.telegraph.co.uk/culture/tvandradio/9676266/Im-A-Celebrity-Nadine-Dorries-eats-a-testicle.html">ate a baked spider</a> on TV;</li>
+<li>19 May 2012: because the haircut of a football player <a class="reference external" href="http://sports.yahoo.com/blogs/soccer-dirty-tackle/salomon-kalou-hair-spider-fascinating-didier-drogba-195406906.html">featured a spider</a>.</li>
+</ul>
+<p>Although this simple noise filter can no doubt be improved,
+a manual inspection of randomly selected tweets
+leads me to believe that the vast majority of the remaining sample
+relates to genuine spider sightings.</p>
+</div>
+<div class="section" id="conclusions">
+<h2>Conclusions</h2>
+<p>Human mankind is the biggest and most powerful <em>sensor network</em> on this planet,
+and social media allows us to exploit their observations more efficiently
+than ever before.
+In this post I used more than 1 million tweets from 446&nbsp;000 unique users
+to gain insights into the behaviour of spiders in Britain
+(and the humans that encounter them).
+I found that people are 5 to 10 times
+more likely to tweet about spiders in late autumn than in winter.
+This pattern likely corresponds to a true increase in the number of
+encounters between spiders and humans, and appears to correlate strongly
+with the local mean temperature.</p>
+<p>I am unable to distribute the data set
+because I would likely get into trouble with Twitter.
+However, if you are familiar with the scientific literature
+on spiders (which I am not),
+and if you would like to help me turn this data into a paper,
+then please get in touch or leave a comment below.</p>
+<p>The tools used to create these graphs are
+Amazon EC2 (for collecting the tweets),
+Python (parsing),
+SQLite (data exploration and statistics),
+and matplotlib (visualisation) using a <a class="reference external" href="https://github.com/barentsen/boilerplates/tree/master/python">custom configuration file</a>.</p>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'geert';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+</article>
+
+    <footer>
+<p>&copy; Geert Barentsen 
+—
+powered by <a href="http://getpelican.com">Pelican</a>
+—
+you can <a href="https://github.com/alexandrevicenzi/flex">fork this theme</a> on GitHub.
+</p>    </footer>
+  </main>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69171-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Geert Barentsen ",
+  "url" : "http://www.geert.io",
+  "image": "https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

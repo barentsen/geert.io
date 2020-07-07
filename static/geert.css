@@ -1,0 +1,57 @@
+body {
+    line-height: 1.62em;
+    font-size: 1.2em;
+}
+
+aside div p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+a {
+    color: #3498db;
+}
+
+a:hover {
+    color: #d35400;
+}
+
+a.btn {
+    color: #3498db;
+    background-color: white;
+    border: 2px solid #3498db;
+}
+
+a.btn:hover {
+    color: #d35400;
+    background-color: white;
+    border: 2px solid #d35400;
+}
+
+/* Subtitles inside articles */
+div.section h2 {
+    font-size: 1.5em;
+}
+
+main {
+    margin-top: 1em;
+}
+
+div.figure img {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+p.caption {
+    font-weight: 400;
+    color: #777;
+    font-style: italic;
+    font-size: 0.9em;
+    padding: 0.6em;
+    padding-top: 0;
+}
+
+aside li a {
+    text-transform: none;
+    font-weight: 300;
+}
