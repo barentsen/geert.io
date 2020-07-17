@@ -24,13 +24,16 @@ leading to the discovery of 300+ new planets across the galaxy.
 
 Career
 ~~~~~~
-- 2017-now: Community Support Director, **NASA Kepler Mission** (USA)
+- 2017-now: Program Director, **NASA Kepler Mission** (USA)
 - 2015-2017: Astrophysicist, **NASA Kepler Mission** (USA)
 - 2012-2015: Research & Teaching Assistant, **University of Hertfordshire** (UK)
-- 2008-2012: Physics PhD Student, **Queen's University Belfast** (UK)
 - 2007-2008: Software Engineer Intern, **European Space Agency** (The Netherlands)
-- 2006-2007: Climate Research Assistant, **Royal Meteorological Institute** (Belgium)
-- 2002-2006: MSc Computer Science, **University of Antwerp** (Belgium)
+- 2006-2007: Climate Researcher, **Royal Meteorological Institute** (Belgium)
+
+Education
+~~~~~~~~~
+- 2008-2012: **PhD Physics**, Armagh Observatory at QUB (UK)
+- 2002-2006: **MSc Computer Science**, University of Antwerp (Belgium)
 
 Skills
 ~~~~~~
@@ -49,6 +52,9 @@ Things I have created
 -  the `Venus ground-based image archive`_ for the European Space Agency;
 -  NASA's `Astronomy Picture of the Day on 25 April 2011`_;
 -  visualisations which made it `onto the BBC news website`_.
+- a website which allowed the public to `name the largest unnamed world in our Solar System <http://barentsen.github.io/Help-name-2007OR10
+>`_.
+
 
 Other highlights
 ~~~~~~~~~~~~~~~~
