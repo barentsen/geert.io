@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Geert Barentsen</title><link href="https://www.geert.io/" rel="alternate"></link><link href="https://www.geert.io/feeds/all.atom.xml" rel="self"></link><id>https://www.geert.io/</id><updated>2020-09-26T07:00:00-07:00</updated><subtitle>Scientist &amp; Software Engineer</subtitle><entry><title>Wildfires From Space: Part I — The Santa Cruz Mountains</title><link href="https://www.geert.io/wildfires-from-space-santa-cruz-mountains-2020.html" rel="alternate"></link><published>2020-09-26T07:00:00-07:00</published><updated>2020-09-26T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2020-09-26:/wildfires-from-space-santa-cruz-mountains-2020.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/"&gt;CZU Lightning Complex&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Geert Barentsen</title><link href="https://www.geert.io/" rel="alternate"></link><link href="https://www.geert.io/feeds/all.atom.xml" rel="self"></link><id>https://www.geert.io/</id><updated>2020-09-28T07:00:00-07:00</updated><subtitle>Scientist &amp; Software Engineer</subtitle><entry><title>Wildfires From Space: Part II — The SCU Lightning Complex near San Jose</title><link href="https://www.geert.io/wildfires-from-space-scu-lightning-complex-2020.html" rel="alternate"></link><published>2020-09-28T07:00:00-07:00</published><updated>2020-09-28T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2020-09-28:/wildfires-from-space-scu-lightning-complex-2020.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/18/scu-lightning-complex/"&gt;SCU Lightning Complex&lt;/a&gt;
+east of San Jose is one of several significant wild fires
+which affected the US West Coast in recent weeks.
+The fire started on August 16, 2020, and burned nearly 400,000 acres over a period of several weeks.&lt;/p&gt;
+&lt;p&gt;To visualize the impact of the fire …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/18/scu-lightning-complex/"&gt;SCU Lightning Complex&lt;/a&gt;
+east of San Jose is one of several significant wild fires
+which affected the US West Coast in recent weeks.
+The fire started on August 16, 2020, and burned nearly 400,000 acres over a period of several weeks.&lt;/p&gt;
+&lt;p&gt;To visualize the impact of the fire, I mosaicked two recent true-color images
+taken from space by &lt;a class="reference external" href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2"&gt;ESA's Sentinel-2 satellite&lt;/a&gt;.
+You can download high-resolution versions of these images
+&lt;a class="reference external" href="https://www.geert.io/images/scu-lightning-complex-before-2020jun03.jpg"&gt;here&lt;/a&gt;
+and &lt;a class="reference external" href="https://www.geert.io/images/scu-lightning-complex-after-2020sep06.jpg"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="image-details"&gt;
+&lt;h2&gt;Image details&lt;/h2&gt;
+&lt;p&gt;Both images were taken by ESA's Copernicus Sentinel-2 satellite and turned into cloud-free mosaics using Google's fabulous &lt;a class="reference external" href="https://earthengine.google.com/"&gt;Earth Engine&lt;/a&gt; platform.
+You can recreate the image for September 6th using the following Earth Engine script:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mosaic&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ee&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ImageCollection&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;COPERNICUS/S2_SR&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterBounds&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterDate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2020-09-05&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2020-09-07&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;CLOUDY_PIXEL_PERCENTAGE&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;bands&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;TCI_R&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_G&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+              &lt;span class="nx"&gt;min&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+              &lt;span class="nx"&gt;max&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+              &lt;span class="nx"&gt;gamma&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="nx"&gt;Map&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addLayer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;mosaic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+</content><category term="wildfires"></category></entry><entry><title>Wildfires From Space: Part I — The Santa Cruz Mountains</title><link href="https://www.geert.io/wildfires-from-space-santa-cruz-mountains-2020.html" rel="alternate"></link><published>2020-09-26T07:00:00-07:00</published><updated>2020-09-26T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2020-09-26:/wildfires-from-space-santa-cruz-mountains-2020.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/"&gt;CZU Lightning Complex&lt;/a&gt;
 in the Santa Cruz Mountains is one of several significant wild fires
 which affected the US West Coast in recent weeks.
 The fire started on August 16, 2020, and burned more than 80,000 acres over a period of several weeks.&lt;/p&gt;
