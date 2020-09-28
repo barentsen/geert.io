@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Geert Barentsen</title><link href="https://www.geert.io/" rel="alternate"></link><link href="https://www.geert.io/feeds/all.atom.xml" rel="self"></link><id>https://www.geert.io/</id><updated>2020-09-26T07:00:00-07:00</updated><subtitle>Scientist &amp; Software Engineer</subtitle><entry><title>Wildfires From Space: Part I — The Santa Cruz Mountains</title><link href="https://www.geert.io/santa-cruz-wildfires-from-space.html" rel="alternate"></link><published>2020-09-26T07:00:00-07:00</published><updated>2020-09-26T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2020-09-26:/santa-cruz-wildfires-from-space.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/"&gt;CZU Lightning Complex&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Geert Barentsen</title><link href="https://www.geert.io/" rel="alternate"></link><link href="https://www.geert.io/feeds/all.atom.xml" rel="self"></link><id>https://www.geert.io/</id><updated>2020-09-26T07:00:00-07:00</updated><subtitle>Scientist &amp; Software Engineer</subtitle><entry><title>Wildfires From Space: Part I — The Santa Cruz Mountains</title><link href="https://www.geert.io/wildfires-from-space-santa-cruz-mountains-2020.html" rel="alternate"></link><published>2020-09-26T07:00:00-07:00</published><updated>2020-09-26T07:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2020-09-26:/wildfires-from-space-santa-cruz-mountains-2020.html</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/"&gt;CZU Lightning Complex&lt;/a&gt;
 in the Santa Cruz Mountains was one of several significant wild fires
 which affected the US West Coast in recent weeks.
 The fire started on August 16, 2020, and burned more than 80,000 acres over a period of several weeks.&lt;/p&gt;
@@ -8,14 +8,14 @@ in the Santa Cruz Mountains was one of several significant wild fires
 which affected the US West Coast in recent weeks.
 The fire started on August 16, 2020, and burned more than 80,000 acres over a period of several weeks.&lt;/p&gt;
 &lt;p&gt;To visualize the impact of the fire, I mosaicked two recent true-color images
-taken from space by ESA's Sentinel 2 satellite.
+taken from space by &lt;a class="reference external" href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2"&gt;ESA's Sentinel-2 satellite&lt;/a&gt;.
 You can download high-resolution versions of these images
 &lt;a class="reference external" href="https://www.geert.io/images/santa-cruz-mountains-2020jun03.png"&gt;here&lt;/a&gt;
 and &lt;a class="reference external" href="https://www.geert.io/images/santa-cruz-mountains-2020sep06.png"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;These are the Santa Cruz Mountains near Silicon Valley, seen from space before &amp;amp; after the recent &lt;a href="https://twitter.com/hashtag/CaliforniaFires?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#CaliforniaFires&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Can you see the giant brown scar?&lt;br&gt;&lt;br&gt;⬇️ June 3, 2020 vs Sept 6, 2020 ↘️ &lt;a href="https://t.co/Y8nu6S9Jcn"&gt;pic.twitter.com/Y8nu6S9Jcn&lt;/a&gt;&lt;/p&gt;&amp;mdash; Geert Barentsen (@GeertHub) &lt;a href="https://twitter.com/GeertHub/status/1309878200533618688?ref_src=twsrc%5Etfw"&gt;September 26, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;div class="section" id="image-details"&gt;
 &lt;h2&gt;Image details&lt;/h2&gt;
 &lt;p&gt;Both images were taken by ESA's Copernicus Sentinel-2 satellite and turned into cloud-free mosaics using Google's fabulous &lt;a class="reference external" href="https://earthengine.google.com/"&gt;Earth Engine&lt;/a&gt; platform.
-You can recreate this image using the following Earth Engine script:&lt;/p&gt;
+You can recreate the image for September 6th using the following Earth Engine script:&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
  3
@@ -29,34 +29,20 @@ You can recreate this image using the following Earth Engine script:&lt;/p&gt;
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;geometry&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-      &lt;span class="nx"&gt;ee&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Geometry&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Polygon&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-          &lt;span class="p"&gt;[[[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;123.17578928358994&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;38.219221735447334&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;123.17578928358994&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;36.77236124142988&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;120.74781076796495&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;36.77236124142988&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;120.74781076796495&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;38.219221735447334&lt;/span&gt;&lt;span class="p"&gt;]]],&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+14&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mosaic&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ee&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ImageCollection&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;COPERNICUS/S2_SR&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterBounds&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterDate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2020-09-05&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2020-09-07&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;CLOUDY_PIXEL_PERCENTAGE&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mosaic&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ee&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ImageCollection&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;COPERNICUS/S2_SR&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterBounds&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;filterDate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2020-09-05&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2020-09-07&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;CLOUDY_PIXEL_PERCENTAGE&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-      &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;bands&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;TCI_R&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_G&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;bands&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;TCI_R&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_G&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;TCI_B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
               &lt;span class="nx"&gt;min&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
               &lt;span class="nx"&gt;max&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
               &lt;span class="nx"&gt;gamma&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.45&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-  &lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
 
-  &lt;span class="nx"&gt;Map&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addLayer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;mosaic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;Map&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addLayer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mosaic&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;mosaic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
 </content><category term="wildfires"></category></entry><entry><title>The exponential spread of the Ebola virus</title><link href="https://www.geert.io/exponential-growth-of-ebola.html" rel="alternate"></link><published>2014-10-15T00:00:00-07:00</published><updated>2014-10-15T00:00:00-07:00</updated><author><name>Geert</name></author><id>tag:www.geert.io,2014-10-15:/exponential-growth-of-ebola.html</id><summary type="html">&lt;p class="first last"&gt;Three weeks have passed since my original post, and Ebola has continued to spread exponentially since. At the present rate, the number of &lt;em&gt;reported&lt;/em&gt; cases of Ebola appears to double every 29 days.&lt;/p&gt;
