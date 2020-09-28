@@ -6,7 +6,7 @@ Wildfires From Space: Part I — The Santa Cruz Mountains
 :slug: wildfires-from-space-santa-cruz-mountains-2020
 
 The `CZU Lightning Complex <https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/>`_
-in the Santa Cruz Mountains was one of several significant wild fires
+in the Santa Cruz Mountains is one of several significant wild fires
 which affected the US West Coast in recent weeks.
 The fire started on August 16, 2020, and burned more than 80,000 acres over a period of several weeks.
 
