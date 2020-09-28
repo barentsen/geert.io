@@ -47,3 +47,5 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/barentsen'),
 
 COPYRIGHT_NAME = "Geert Barentsen"
 COPYRIGHT_YEAR = "2020"
+
+PLUGINS = []
