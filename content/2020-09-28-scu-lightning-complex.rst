@@ -22,6 +22,24 @@ and `here <|filename|/images/scu-lightning-complex-after-2020sep06.jpg>`__.
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is the Bay Area east of San Jose in California, seen from space before &amp; after the recent <a href="https://twitter.com/hashtag/wildfires?src=hash&amp;ref_src=twsrc%5Etfw">#wildfires</a>.<br><br>Unprecedented fires have turned 300,000 football fields of nature into a giant brown scar. The images are 70 miles wide!<br><br>⬇️ Jun 3, 2020 vs Sep 6, 2020 ↘️ <a href="https://t.co/mFODtGrZOA">pic.twitter.com/mFODtGrZOA</a></p>&mdash; Geert Barentsen (@GeertHub) <a href="https://twitter.com/GeertHub/status/1310723653198163968?ref_src=twsrc%5Etfw">September 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
+
+For scale: here is how the burn area compares to the rest of the Bay Area.
+
+
+.. figure:: |filename|/images/bay-area-from-space-2020jun03.jpg
+   :target: |filename|/images/bay-area-from-space-2020jun03.jpg
+
+   San Francisco Bay Area seen from space on June 3, 2020.
+
+
+.. figure:: |filename|/images/bay-area-from-space-2020sep06.jpg
+   :target: |filename|/images/bay-area-from-space-2020sep06.jpg
+
+   San Francisco Bay Area seen from space on September 6, 2020.
+
+
+
+
 Image details
 -------------
 

@@ -1,5 +1,5 @@
-Wildfires From Space: Part I — The Santa Cruz Mountains
-###############################################################
+Wildfires From Space: Part I — The CZU Lightning Complex in the Santa Cruz Mountains
+####################################################################################
 :date: 2020-09-26 07:00
 :author: Geert
 :category: wildfires 
@@ -20,9 +20,6 @@ and `here <|filename|/images/santa-cruz-mountains-2020sep06.png>`__.
 .. raw:: html
 
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">These are the Santa Cruz Mountains near Silicon Valley, seen from space before &amp; after the recent <a href="https://twitter.com/hashtag/CaliforniaFires?src=hash&amp;ref_src=twsrc%5Etfw">#CaliforniaFires</a>.<br><br>Can you see the giant brown scar?<br><br>⬇️ June 3, 2020 vs Sept 6, 2020 ↘️ <a href="https://t.co/Y8nu6S9Jcn">pic.twitter.com/Y8nu6S9Jcn</a></p>&mdash; Geert Barentsen (@GeertHub) <a href="https://twitter.com/GeertHub/status/1309878200533618688?ref_src=twsrc%5Etfw">September 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
 
 
 Image details
