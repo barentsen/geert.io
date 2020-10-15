@@ -12,15 +12,7 @@ taken from space by &lt;a class="reference external" href="https://sentinel.esa.
 You can download high-resolution versions of these images
 &lt;a class="reference external" href="https://www.geert.io/images/los-angeles-from-space-2020aug31.jpg"&gt;here&lt;/a&gt;
 and &lt;a class="reference external" href="https://www.geert.io/images/los-angeles-from-space-2020sep30.jpg"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://www.geert.io/images/los-angeles-from-space-2020aug31.jpg"&gt;&lt;img alt="" src="https://www.geert.io/images/los-angeles-from-space-2020aug31.jpg" /&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;Los Angeles seen from space on August 31st, 2020.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://www.geert.io/images/los-angeles-from-space-2020sep30.jpg"&gt;&lt;img alt="" src="https://www.geert.io/images/los-angeles-from-space-2020sep30.jpg" /&gt;&lt;/a&gt;
-&lt;p class="caption"&gt;Los Angeles seen from space on September 30th, 2020.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="image-details"&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;This is Los Angeles, seen from space before &amp;amp; after the start of the &lt;a href="https://twitter.com/hashtag/BobcatFire?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#BobcatFire&lt;/a&gt;. 🔥&lt;br&gt;&lt;br&gt;Can you spot the giant brown fire scar in the hills north of the city?&lt;br&gt;&lt;br&gt;⬇️ Aug 31 vs Sep 30 ↘️ &lt;a href="https://t.co/JsiLkEe4B5"&gt;pic.twitter.com/JsiLkEe4B5&lt;/a&gt;&lt;/p&gt;&amp;mdash; Geert Barentsen (@GeertHub) &lt;a href="https://twitter.com/GeertHub/status/1316766471180046338?ref_src=twsrc%5Etfw"&gt;October 15, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;div class="section" id="image-details"&gt;
 &lt;h2&gt;Image details&lt;/h2&gt;
 &lt;p&gt;Both images were taken by ESA's Copernicus Sentinel-2 satellite and turned into cloud-free mosaics using Google's &lt;a class="reference external" href="https://earthengine.google.com/"&gt;Earth Engine&lt;/a&gt; platform.
 You can recreate the second image using the following Earth Engine script:&lt;/p&gt;
