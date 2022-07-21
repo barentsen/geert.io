@@ -54,7 +54,7 @@
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="https://www.geert.io/author/geert.html">
 <meta property="article:section" content="wildfires"/>
-<meta property="og:image" content="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg">
+<meta property="og:image" content="/images/avatar.png">
 
   <title>Geert Barentsen &ndash; Wildfires From Space: Part II — The SCU Lightning Complex near San Jose</title>
 
@@ -63,7 +63,7 @@
   <aside>
     <div>
       <a href="https://www.geert.io">
-        <img src="https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg" alt="Geert Barentsen" title="Geert Barentsen">
+        <img src="/images/avatar.png" alt="Geert Barentsen" title="Geert Barentsen">
       </a>
 
       <h1>
@@ -146,35 +146,35 @@ and <a class="reference external" href="https://www.geert.io/images/scu-lightnin
 <h2>Image details</h2>
 <p>Both images were taken by ESA's Copernicus Sentinel-2 satellite and turned into cloud-free mosaics using Google's fabulous <a class="reference external" href="https://earthengine.google.com/">Earth Engine</a> platform.
 You can recreate the image for September 6th using the following Earth Engine script:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">mosaic</span> <span class="o">=</span> <span class="nx">ee</span><span class="p">.</span><span class="nx">ImageCollection</span><span class="p">(</span><span class="s1">&#39;COPERNICUS/S2_SR&#39;</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">filterBounds</span><span class="p">(</span><span class="nx">geometry</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">filterDate</span><span class="p">(</span><span class="s1">&#39;2020-09-05&#39;</span><span class="p">,</span> <span class="s1">&#39;2020-09-07&#39;</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="s1">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">mosaic</span><span class="p">()</span>
-    <span class="p">.</span><span class="nx">clip</span><span class="p">(</span><span class="nx">geometry</span><span class="p">);</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">mosaic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">ImageCollection</span><span class="p">(</span><span class="s1">&#39;COPERNICUS/S2_SR&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">filterBounds</span><span class="p">(</span><span class="nx">geometry</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">filterDate</span><span class="p">(</span><span class="s1">&#39;2020-09-05&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2020-09-07&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="s1">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">mosaic</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">clip</span><span class="p">(</span><span class="nx">geometry</span><span class="p">);</span><span class="w"></span>
 
-<span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span><span class="nx">bands</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;TCI_R&#39;</span><span class="p">,</span> <span class="s1">&#39;TCI_G&#39;</span><span class="p">,</span> <span class="s1">&#39;TCI_B&#39;</span><span class="p">],</span>
-              <span class="nx">min</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
-              <span class="nx">max</span><span class="o">:</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">],</span>
-              <span class="nx">gamma</span><span class="o">:</span> <span class="p">[</span><span class="mf">1.45</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">]</span>
-<span class="p">};</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">bands</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;TCI_R&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;TCI_G&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;TCI_B&#39;</span><span class="p">],</span><span class="w"></span>
+<span class="w">              </span><span class="nx">min</span><span class="o">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">],</span><span class="w"></span>
+<span class="w">              </span><span class="nx">gamma</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1.45</span><span class="p">,</span><span class="w"> </span><span class="mf">1.45</span><span class="p">,</span><span class="w"> </span><span class="mf">1.45</span><span class="p">]</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 
-<span class="nx">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">mosaic</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="s1">&#39;mosaic&#39;</span><span class="p">);</span>
-</pre></div>
-</td></tr></table></div>
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">mosaic</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mosaic&#39;</span><span class="p">);</span><span class="w"></span>
+</pre></div></td></tr></table></div>
+</div>
 
   </div>
   <div class="tag-cloud">
@@ -204,7 +204,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@type" : "Blog",
   "name": " Geert Barentsen ",
   "url" : "https://www.geert.io",
-  "image": "https://pbs.twimg.com/profile_images/683734803133235200/NogCr1RI_400x400.jpg",
+  "image": "/images/avatar.png",
   "description": ""
 }
 </script>
